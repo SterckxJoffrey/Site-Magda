@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>%%HEAD_TITLE%%</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/skeleton.css">
+    %%ADDITIONAL_CSS%%
+    %%ADDITIONAL_JS%%
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <a href="/" class="logo">ActuMauve</a>
+          <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <ul id="nav-menu" class="nav-links">
+            <li><a href="/news">Actualités</a></li>
+            <li><a href="/palmares">Palmarès</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </nav> 
+    </header>
+    <main>
+        %%MAIN_CONTENT%%
+    </main>
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-about">
+          <h2>À propos</h2>
+          <p>Ce site est un blog dédié au RSC Anderlecht, proposant des actualités, des trophées, et plus encore. Créé par un passionné pour les passionnés.</p>
+          <button id="toggle-theme" aria-label="Basculer le mode sombre">🌓</button>
+
+        </div>
+        <div class="footer-navigation">
+          <h2>Navigation</h2>
+          <ul>
+            <li><a href="/">Accueil</a></li>
+            <li><a href="/news">Actualités</a></li>
+            <li><a href="/palmares">Palmarès</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h2>Suivez-nous</h2>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">X (Twitter)</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <?= date('Y') ?> ActuMauve. Tous droits réservés.</p>
+      </div>
+    </footer>
+    
+</body>
+</html>
