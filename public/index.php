@@ -6,17 +6,30 @@ define('SITE_ROOT', __DIR__ . '/../');
 $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 $uri_parts = explode('/', trim($uri, '/'));
 
+
+$supported_langs = ['fr', 'pl'];
+
+// Si une langue est passée dans l'URL (et supportée)
+if (!empty($uri_parts[0]) && in_array($uri_parts[0], $supported_langs)) {
+    $lang = array_shift($uri_parts);      // On enlève la langue de l'URL
+    $_SESSION['lang'] = $lang;            // On met à jour la session
+} elseif (isset($_SESSION['lang']) && in_array($_SESSION['lang'], $supported_langs)) {
+    $lang = $_SESSION['lang'];            // On garde la langue précédente
+} else {
+    $lang = 'fr';                          // Par défaut
+    $_SESSION['lang'] = $lang;
+}
+
+
+
 $section = 'public';
 if (!empty($uri_parts[0]) && $uri_parts[0] === 'admin') {
     $section = 'admin';
     array_shift($uri_parts);
 }
 
-// Contrôleur par défaut
 $controller = !empty($uri_parts[0]) ? $uri_parts[0] : 'home';
-// Action par défaut
 $action = $uri_parts[1] ?? 'index';
-// Slug ou paramètre
 $slug = $uri_parts[2] ?? null;
 
 $controller_path = SITE_ROOT . "app/controller/{$section}/{$controller}.php";
@@ -25,7 +38,6 @@ if (file_exists($controller_path)) {
     include_once($controller_path);
 
     if (!function_exists($action)) {
-        // Si l'action n'existe pas, on suppose que c'est un slug
         $slug = $action;
         $action = 'show';
     }
@@ -39,32 +51,50 @@ if (file_exists($controller_path)) {
         }
     } else {
         http_response_code(404);
-        render('errors/404.php', ['head_title' => 'Page non trouvée'], $section);
+        render('errors/404.php', ['head_title' => 'Page non trouvée'], $section, $lang);
         exit;
     }
 } else {
     http_response_code(404);
-    render('errors/404.php', ['head_title' => 'Page non trouvée', 'additional_css' => '<link rel="stylesheet" href="/css/404.css">'], $section);
+    render('errors/404.php', [
+        'head_title' => 'Page non trouvée',
+        'additional_css' => '<link rel="stylesheet" href="/css/404.css">'
+    ], $section, $lang);
     exit;
 }
-
-function render($partial, $data = [], $view_dir = 'public')
+function render($partial, $data = [], $view_dir = 'public', $lang = 'fr')
 {
     $skeleton = SITE_ROOT . "app/view/{$view_dir}/skeleton.html";
-    $partial  = SITE_ROOT . "app/view/{$view_dir}/{$partial}";
+    $partialPath = SITE_ROOT . "app/view/{$view_dir}/{$partial}";
 
+    // Traductions (lang/fr.php ou lang/pl.php)
+    $translations_file = SITE_ROOT . "app/lang/{$lang}.php";
+    $t = file_exists($translations_file) ? include $translations_file : [];
+
+    // Rendu du contenu partiel
+    ob_start();
+    extract($data);
+    include($partialPath);
+    $partialContent = ob_get_clean();
+
+    // Lecture du squelette
     $page = file_get_contents($skeleton);
 
-    ob_start();
-    include($partial);
-    $partial = ob_get_clean();
+    // Génération du menu avec traductions
+    $menu = <<<HTML
+  <li><a href="/{$lang}/home">{$t['nav_home']}</a></li>
+  <li><a href="/{$lang}/domain">{$t['nav_domain']}</a></li>
+  <li><a href="/{$lang}/fees">{$t['nav_fees']}</a></li>
+  <li><a href="/{$lang}/contact" class="CTO">{$t['nav_contact']}</a></li>
+HTML;
 
+    // Injections dans le squelette
     $page = str_replace('%%HEAD_TITLE%%', $data['head_title'] ?? 'Mon site', $page);
     $page = str_replace('%%ADDITIONAL_CSS%%', $data['additional_css'] ?? '', $page);
     $page = str_replace('%%ADDITIONAL_JS%%', $data['additional_js'] ?? '', $page);
-    $page = str_replace('%%MAIN_CONTENT%%', $partial, $page);
-
-
+    $page = str_replace('%%MAIN_CONTENT%%', $partialContent, $page);
+    $page = str_replace('%%MENU%%', $menu, $page);
+    $page = str_replace('%%LANG%%', $lang, $page);
 
     echo $page;
 }

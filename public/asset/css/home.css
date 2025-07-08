@@ -1,0 +1,31 @@
+.hero-section {
+    background-image: url('/asset/img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    
+    display: flex; /* Ajout Flexbox */
+    justify-content: center; /* Centrage horizontal */
+    align-items: center;     /* Centrage vertical */
+    text-align: center;      /* Pour centrer le texte à l’intérieur */
+  }
+  
+  
+  .hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* Opacité = foncé */
+    z-index: 1;
+  }
+  
+  .hero-section h1 {
+    position: relative;
+    z-index: 2; /* au-dessus du filtre */
+    font-size: 3rem;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+  }

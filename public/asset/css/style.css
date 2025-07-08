@@ -1,0 +1,28 @@
+:root {
+    --primary-color : #c6Ac92;
+    --secondary-color : #ffffff;
+    --text-color : #777777;
+    --nav-link : #ffffff90;
+    --nav-background : #ffffff33;
+
+    --padding-xs : 0.5rem;
+    --padding-s : 1rem;
+    --padding-m : 1.5rem;
+    --padding-l : 2rem;
+    --padding-xl : 2.5rem;
+}
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing : border-box;
+
+}
+
+body {
+    background-color: var(--primary-color);
+
+}
