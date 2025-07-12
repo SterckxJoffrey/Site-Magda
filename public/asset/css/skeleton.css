@@ -7,7 +7,7 @@
     padding: var(--padding-s);
     position: fixed;
     width: 100%;
-    z-index: 2;
+    z-index: 20;
   }
 
   .logo img {

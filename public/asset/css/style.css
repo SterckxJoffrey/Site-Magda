@@ -4,12 +4,14 @@
     --text-color : #777777;
     --nav-link : #ffffff90;
     --nav-background : #ffffff33;
+    --background : rgba(198, 172, 146, 0.7);
 
     --padding-xs : 0.5rem;
     --padding-s : 1rem;
     --padding-m : 1.5rem;
     --padding-l : 2rem;
     --padding-xl : 2.5rem;
+
 }
 
 
@@ -22,7 +24,3 @@
 
 }
 
-body {
-    /* background-color: var(--primary-color); */
-
-}
