@@ -5,6 +5,7 @@ const logoLink = document.querySelector('.logo');
 const logoImg = logoLink.querySelector('img');
 const bars = document.querySelectorAll('.bar');
 const links = document.querySelectorAll('.nav-links li a');
+const body = document.body;
 
 // Gestion du menu burger
 burger.addEventListener('click', () => {
@@ -14,29 +15,11 @@ burger.addEventListener('click', () => {
   document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
 });
 
-// Changement de navbar au scroll
+// Ajout d'une classe .scrolled au <body> au scroll
 window.addEventListener('scroll', () => {
   if (window.scrollY > 0) {
-    navbar.style.backgroundColor = '#ffffff'; 
-    navLinks.style.backgroundColor = '#ffffff';
-    bars.forEach(bar => {
-      bar.style.backgroundColor = '#c6Ac92';
-    });
-    links.forEach(link => {
-      link.style.color = 'black';
-    });
-    // logoImg.src = '/asset/img/logo.png';
+    body.classList.add('scrolled');
   } else {
-    navbar.style.backgroundColor = 'transparent';
-    navLinks.style.backgroundColor = 'transparent';
-    bars.forEach(bar => {
-      bar.style.backgroundColor = 'white';
-    });
-    links.forEach(link => {
-      link.style.color = 'white';
-    });
-    // logoImg.src = '/asset/img/logo_black.png';
+    body.classList.remove('scrolled');
   }
 });
-
-

@@ -1,4 +1,7 @@
-/* Navbar générale */
+/* ------------------------
+   NAVBAR - STYLE GÉNÉRAL (mobile first)
+-------------------------*/
+
 .navbar {
     display: flex;
     align-items: center;
@@ -8,37 +11,53 @@
     position: fixed;
     width: 100%;
     z-index: 20;
+    transition: background-color 0.3s ease;
   }
-
+  
   .logo img {
-    height: 80px; /* ou plus selon ton besoin */
-    object-fit: cover; /* couvre l'espace, effet zoomé */
+    height: 60px;
+    object-fit: cover;
   }
   
   .logo {
     font-weight: 700;
     font-size: 1.6rem;
-
     text-decoration: none;
     letter-spacing: 0.05em;
     user-select: none;
   }
   
+  /* Nav-links = menu caché par défaut */
   .nav-links {
+    position: fixed;
+    top: 90px;
+    right: 0;
+    backdrop-filter: blur(12px);
     display: flex;
-    list-style: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1.5rem;
     gap: 1.5rem;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    list-style: none;
     margin: 0;
-    padding: 0;
-
     height: auto;
-    z-index: 10;
+    background-color: transparent;
+    z-index: 999;
+  }
+  
+  .nav-links.open {
+    transform: translateX(0);
   }
   
   .nav-links li a {
     text-decoration: none;
-    color: var(--nav-link);
-
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    align-items: center;
+    width: 100%;
     padding: 0.35rem 0.5rem;
     border-radius: 0.3rem;
     transition: var(--transition);
@@ -50,34 +69,30 @@
     outline: none;
   }
   
-  /* Nav utilisateur */
+  /* Nav utilisateur (mobile) */
   .nav-user {
     display: flex;
     align-items: center;
-
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
     font-weight: 600;
   }
   
-  .CTO {
-    background-color: var(--nav-background);
-  }
   .nav-user a {
-
     text-decoration: none;
     padding: 0.35rem 0.5rem;
     border-radius: 0.3rem;
-
   }
   
   .nav-user a:hover,
   .nav-user a:focus-visible {
-
     outline: none;
   }
   
-  /* Burger menu - mobile */
+  /* Burger menu (visible sur mobile) */
   .burger {
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
     width: 24px;
@@ -86,6 +101,7 @@
     border: none;
     cursor: pointer;
     padding: 0;
+    z-index: 999;
   }
   
   .burger .bar {
@@ -96,40 +112,76 @@
     transition: var(--transition);
   }
   
-  /* Responsive mobile */
-  @media (max-width: 768px) {
+  /* ------------------------
+     SCROLL + PAGE STYLE
+  -------------------------*/
+  
+  /* Navbar scrollée (mobile) */
+  body.scrolled .navbar {
+    background-color: white;
+  }
+  body.scrolled .nav-links {
+    background-color: white;
+  }
+  body.scrolled .nav-links li a {
+    color: black;
+  }
+  body.scrolled .burger .bar {
+    background-color: #c6ac92;
+  }
+  
+  body.domain_page .navbar  {
+    background-color: #c6ac92;
+  }
+  body.domain_page .nav-links  {
+    background-color: #c6ac92;
+  }
+  body.domain_page .burger .bar {
+    background-color: white;
+  }
+  
+  body.domain_page.scrolled .navbar,
+  body.domain_page.scrolled .nav-links {
+    background-color: #c6ac92;
+  }
+  
+  body.domain_page.scrolled .nav-links li a {
+    color: white;
+  }
+  body.domain_page.scrolled .burger .bar {
+    background-color: white;
+  }
+  
+  /* ------------------------
+     RESPONSIVE TABLETTE / DESKTOP
+  -------------------------*/
+  
+  @media (min-width: 769px) {
     .burger {
-      display: flex;
+      display: none;
     }
   
     .nav-links {
-      position: fixed;
-      top: 100px;
-      right: 0;
-      /* height: calc(100vh - 64px); */
-
-      backdrop-filter: blur(12px);
-      flex-direction: column;
-      align-items: center;
-      padding: 2rem 1.5rem;
+      position: static;
+      transform: none;
+      flex-direction: row;
+      background-color: transparent;
+      backdrop-filter: none;
+      padding: 0;
+      width: auto;
       gap: 1.5rem;
-      width: 100%;
-      transform: translateX(100%);
-      transition: transform 0.3s ease;
-
-      z-index: 999;
-    }
-  
-    .nav-links.open {
-      transform: translateX(0);
+      z-index: 10;
     }
   
     .nav-links li a {
-      font-size: 1.1rem;
-      width: 100%;
+      font-size: 1rem;
+      width: auto;
     }
   
     .nav-user {
-      width: 100%;
+      flex-direction: row;
+      width: auto;
     }
   }
+  
+  

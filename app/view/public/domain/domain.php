@@ -1,15 +1,16 @@
-<body class="home-page">
+<body class="domain_page">
+    
+
 <section class="hero-section">
   <h1>Magdalena Tyminska</h1>
   <h2>Avocat au barreau de Bruxelles</h2>
-  <p> Interventions en droit de la famille, droit de la jeunesse, droit immobilier et droit de la circulation routière.
-    </p>
-    <p>À votre écoute, avec rigueur et bienveillance, pour vous conseiller, vous défendre et faire valoir vos droits.</p>
+  <p>Exerce dans tous les domaines du droit familial
+  Vous accompagne dans toutes vos démarches amiables ou judiciaires</p>
   <a href="/contact" rel="noopener noreferrer">Contact</a>
 </section>
 <section class="description">
 <h2>Description</h2>
-<img src="/asset/img/image.webp" alt="image de moi">
+
 <p>Maître Magdalena TYMINSKA est avocate indépendante à Bruxelles, offrant une expertise variée en Droit de la Famille, Droit de Roulage et Permis de conduire, Droit Civil, Divorce, Droit Pénal, Baux Commerciaux, Droit des Mineurs, et Droit de l’Immobilier.</p>
 <p>Sa personnalité fiable et professionnelle, ainsi que son écoute attentive, font d’elle une avocate de confiance. Chaque client est unique et important pour Maître TYMINSKA, qui s’efforce de répondre rapidement à toutes les demandes et de défendre au mieux vos intérêts.</p>
 <p>Master en droit à finalité civile et pénale</p>
@@ -37,4 +38,5 @@
   </form>
 </section>
 </body>
+
 
