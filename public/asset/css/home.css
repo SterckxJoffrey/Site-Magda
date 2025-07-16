@@ -64,6 +64,7 @@
     flex-direction: column;
     padding: var(--padding-m);
       gap: var(--padding-s);
+      background-color: #f9f9f9;
   }
 
   .description h2 {
@@ -71,14 +72,16 @@
     padding: var(--padding-s);
     text-align: center;
     justify-content: center;
-        color: #222;
+        color: var(--primary-color);
   }
 
-  .description img {
-    margin: 2rem;
-    border: 4px solid var(--primary-color);
-    border-radius: 16px;
-  }
+.description img {
+  margin: 1rem auto; /* centrage horizontal automatique */
+  border: 4px solid var(--primary-color);
+  border-radius: 16px;
+  width: 60%;
+  display: block; /* nécessaire pour que margin auto fonctionne */
+}
   .description p {
     padding-bottom: 10px;
     font-size: 20px;
@@ -108,8 +111,9 @@
 
 .domain > ul > li {
   font-weight: bold;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: var(--secondary-color);
+
   margin-top: var(--padding-m);
 }
 
@@ -119,6 +123,8 @@
   color: var(--text-color);
   line-height: 1.5;
 }
+
+
 
 .domain ul ul {
   padding-left: 1.5rem;
@@ -155,7 +161,7 @@
   .contact h2 {
     font-size: 2rem;
     margin-bottom: 2rem;
-    color: #222;
+    color: var(--primary-color);
   }
   
   .contact_form {

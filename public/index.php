@@ -80,12 +80,34 @@ function render($partial, $data = [], $view_dir = 'public', $lang = 'fr')
     // Lecture du squelette
     $page = file_get_contents($skeleton);
 
-    // Génération du menu avec traductions
+    // Reconstruire l'URL actuelle sans la langue
+    $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+    $uri_parts_local = explode('/', trim($uri, '/'));
+
+    if (!empty($uri_parts_local[0]) && in_array($uri_parts_local[0], ['fr', 'pl'])) {
+        array_shift($uri_parts_local); // on retire la langue
+    }
+
+    $current_uri = implode('/', $uri_parts_local);
+
+    // Afficher uniquement le drapeau de la langue non active
+    $other_lang = $lang === 'fr' ? 'pl' : 'fr';
+    $flags_html = '';
+    if ($other_lang === 'fr') {
+        $flags_html = '<a href="/fr/' . $current_uri . '" title="Français">🇫🇷</a>';
+    } else {
+        $flags_html = '<a href="/pl/' . $current_uri . '" title="Polski">🇵🇱</a>';
+    }
+
+    // Génération du menu avec traductions et un seul drapeau (langue non active)
     $menu = <<<HTML
   <li><a href="/{$lang}/home">{$t['nav_home']}</a></li>
   <li><a href="/{$lang}/domain">{$t['nav_domain']}</a></li>
-  <li><a href="/{$lang}/fees">{$t['nav_fees']}</a></li>
+  <li><a href="/{$lang}/honoraire">{$t['nav_fees']}</a></li>
   <li><a href="/{$lang}/contact" class="CTO">{$t['nav_contact']}</a></li>
+  <li class="lang-switcher">
+    {$flags_html}
+  </li>
 HTML;
 
     // Injections dans le squelette

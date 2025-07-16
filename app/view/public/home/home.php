@@ -9,7 +9,7 @@
 </section>
 <section class="description">
 <h2>Description</h2>
-<img src="/asset/img/image.webp" alt="image de moi">
+<img src="/asset/img/photo.jpeg" alt="image de moi">
 <p>Maître Magdalena TYMINSKA est avocate indépendante à Bruxelles, offrant une expertise variée en Droit de la Famille, Droit de Roulage et Permis de conduire, Droit Civil, Divorce, Droit Pénal, Baux Commerciaux, Droit des Mineurs, et Droit de l’Immobilier.</p>
 <p>Sa personnalité fiable et professionnelle, ainsi que son écoute attentive, font d’elle une avocate de confiance. Chaque client est unique et important pour Maître TYMINSKA, qui s’efforce de répondre rapidement à toutes les demandes et de défendre au mieux vos intérêts.</p>
 <p>Master en droit à finalité civile et pénale</p>
@@ -59,7 +59,7 @@
     </li>
 
     <li>
-      <h3>Droit de la circulation routière</h3>
+      <h3> Droit de la circulation routière</h3>
       <p>Maître Tyminska défend les personnes poursuivies pour des infractions au code de la route :</p>
       <ul>
         <li>excès de vitesse, téléphone au volant, non-respect du code,</li>

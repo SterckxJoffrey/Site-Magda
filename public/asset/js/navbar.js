@@ -12,7 +12,30 @@ burger.addEventListener('click', () => {
   const expanded = burger.getAttribute('aria-expanded') === 'true';
   burger.setAttribute('aria-expanded', String(!expanded));
   navLinks.classList.toggle('open');
-  document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
+  body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
+});
+
+// Fermer le menu si clic en dehors (mobile uniquement)
+document.addEventListener('click', (e) => {
+  const isClickInsideMenu = navLinks.contains(e.target);
+  const isClickOnBurger = burger.contains(e.target);
+
+  if (!isClickInsideMenu && !isClickOnBurger && navLinks.classList.contains('open')) {
+    navLinks.classList.remove('open');
+    burger.setAttribute('aria-expanded', 'false');
+    body.style.overflow = '';
+  }
+});
+
+// Fermer le menu au clic sur un lien
+links.forEach(link => {
+  link.addEventListener('click', () => {
+    if (navLinks.classList.contains('open')) {
+      navLinks.classList.remove('open');
+      burger.setAttribute('aria-expanded', 'false');
+      body.style.overflow = '';
+    }
+  });
 });
 
 // Ajout d'une classe .scrolled au <body> au scroll
