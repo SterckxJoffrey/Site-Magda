@@ -10,7 +10,7 @@
     justify-content: center; /* Centrage horizontal */
     align-items: center;     /* Centrage vertical */
     text-align: center;      /* Pour centrer le texte à l’intérieur */
-    gap: 15px;
+    gap: 10px;
     z-index: -20;
   }
   
@@ -37,6 +37,7 @@
     z-index: 10;
     font-size: 2rem;
     color: var(--secondary-color);
+    padding: var(--padding-s);
   }
   .hero-section p {
     z-index: 10;
@@ -44,7 +45,7 @@
     color: var(--secondary-color);
     padding-right: var(--padding-m);
     padding-left: var(--padding-m);
-    padding-bottom: 0;
+    padding-bottom: var(--padding-s);
   }
   .hero-section a {
     z-index: 10;
@@ -61,13 +62,16 @@
   .description {
     display: flex;
     flex-direction: column;
+    padding: var(--padding-m);
+      gap: var(--padding-s);
   }
 
   .description h2 {
     font-size: 2rem;
-    padding: var(--padding-m);
+    padding: var(--padding-s);
     text-align: center;
     justify-content: center;
+        color: #222;
   }
 
   .description img {
@@ -76,36 +80,64 @@
     border-radius: 16px;
   }
   .description p {
-    padding: var(--padding-m);
+    padding-bottom: 10px;
     font-size: 20px;
     color: var(--text-color);
   }
 
-  .domain {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--background);
-  }
-  .domain h2 {
-    font-size: 2rem;
-    padding: var(--padding-m);
-    text-align: center;
-    justify-content: center;
-    color: var(--secondary-color);
-  }
-  .domain p {
-    padding: var(--padding-m);
-    font-size: 20px;
-    color: var(--text-color);
-  }
+.domain {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background);
+  padding: var(--padding-m);
+  gap: var(--padding-s);
+}
+
+.domain h2 {
+  font-size: 2rem;
+  padding: var(--padding-s);
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+.domain ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0 0 var(--padding-m) 0;
+}
+
+.domain > ul > li {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: var(--secondary-color);
+  margin-top: var(--padding-m);
+}
+
+.domain p {
+  padding: var(--padding-s) 0;
+  font-size: 1.1rem;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.domain ul ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
+.domain ul ul li {
+  font-weight: normal;
+  font-size: 1rem;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
 
   .contact {
     display: flex;
     flex-direction: column;
 
   }
-
-  
 
   .contact_form {
     padding: var(--padding-m);
