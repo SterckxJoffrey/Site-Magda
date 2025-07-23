@@ -1,12 +1,15 @@
+/* Fond global */
+body {
+  background-color: #f9f9f9;
+}
+
+/* Sections */
 section {
   display: flex;
   flex-direction: column;
-  /* padding: 1.5rem; */
   gap: 0.5rem;
-
-}
-body{
-    background-color: #f9f9f9;
+  padding: var(--padding-m, 1.5rem);
+  background-color: #f9f9f9; /* fond gris clair sur mobile */
 }
 
 section h1 {
@@ -15,103 +18,86 @@ section h1 {
   color: var(--primary-color);
   padding-top: 120px;
   padding-bottom: 0.5rem;
+  margin: 0;
 }
 
 section h2 {
   font-size: 1.5rem;
   color: var(--primary-color);
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin: 0 0 1.5rem 0;
 }
 
 section h3 {
   font-size: 1.3rem;
   color: var(--primary-color);
   text-align: center;
-  margin-bottom: 0.8rem;
+  margin: 0 0 1rem 0;
 }
 
 section p {
   font-size: 1.1rem;
   line-height: 1.6;
-  text-align: justify; /* texte justifié sur mobile */
+  text-align: justify;
   color: var(--text-color);
-  margin-bottom: 1rem;
+  margin: 0 0 1.3rem 0;
 }
 
 section ul {
   padding-left: 1.5rem;
-  margin-bottom: 1rem;
+  margin: 0 0 1rem 0;
 }
 
 section ul li {
   font-size: 1.05rem;
   line-height: 1.5;
-  text-align: justify; /* aussi justifié */
+  text-align: justify;
   color: var(--text-color);
-  margin-bottom: 0.5rem;
+  margin: 0 0 0.5rem 0;
 }
 
 /* Grille des domaines */
 .domain-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0; /* plus d'espace entre les items, on gère par border */
+  gap: 0.5rem; /* petit écart entre les articles */
 }
 
 .domain-grid article {
-  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
-  border-top: 2px solid var(--primary-color); /* doré */
-  text-align: justify; /* texte justifié aussi */
-
-}
-
-/* Sur mobile, 1er article pas de bordure top */
-.domain-grid article:first-child {
-  border-top: none;
+  padding: 1.5rem 0rem;
+  text-align: justify;
+  background-color: transparent; /* mobile : fond transparent */
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); */
+  border-radius: 12px;
+  border: none;
+  color: var(--text-color);
 }
 
 /* Desktop */
 @media (min-width: 1024px) {
   section h1 {
     font-size: 2.5rem;
-
   }
 
   section h2 {
     font-size: 2rem;
   }
 
-  .domain-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0; /* suppression gap pour coller les bordures */
-  }
-
-  .domain-grid article {
-    padding: 1.5rem 2rem; /* padding gauche/droite */
-    border-top: none;
-    border-left: 2px solid transparent; /* pour espace bordure gauche */
-    margin: 0; /* pas de marge */
-  }
-
-  /* Bordure top dorée pour la 2e ligne (articles 3 et 4) */
-  .domain-grid article:nth-child(n + 3) {
-    border-top: 2px solid var(--primary-color);
-  }
-
-  /* Bordure gauche dorée pour les articles de la 2e colonne */
-  .domain-grid article:nth-child(2n) {
-    border-left: 2px solid var(--primary-color);
-  }
-
-  /* Pas de bordure gauche sur la 1ère colonne */
-  .domain-grid article:nth-child(2n + 1) {
-    border-left: none;
-  }
-
   section p,
   section ul li {
     font-size: 1.2rem;
-    text-align: justify; /* justifié aussi desktop */
+    text-align: justify;
+  }
+
+  .domain-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem; /* un peu d'espace entre les colonnes et lignes */
+  }
+
+  .domain-grid article {
+    padding: 1.5rem 2rem;
+    background-color: white; /* blanc desktop */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
   }
 }

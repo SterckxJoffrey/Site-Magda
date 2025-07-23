@@ -26,7 +26,7 @@
   
   .hero-section h1 {
     /* position: relative; */
-    font-size: 2.2rem;
+    font-size: 2.3rem;
     color: var(--secondary-color);
     text-transform: uppercase;
 
@@ -35,7 +35,7 @@
   }
   .hero-section h2 {
     z-index: 10;
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: var(--secondary-color);
     padding: var(--padding-s);
   }
@@ -214,7 +214,97 @@
   .contact_form button:hover {
     background-color: #b7997c;
   }
-  
+  .contact-info {
+  padding: 2rem 1rem;
+  background-color: #f9f9f9;
+  text-align: center;
+  color: var(--text-color);
+  max-width: 90%;
+
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.contact-info h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+}
+
+.contact-info > div {
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  margin: 0.2rem 0;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.contact-info .label {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.phone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  font-weight: 600;
+}
+
+@media (min-width: 1024px) {
+  .contact-info {
+    max-width: 600px;
+    margin: 3rem auto 4rem auto;
+    padding: 3rem 2rem;
+  }
+
+  .contact-info h2 {
+    font-size: 2.5rem;
+  }
+
+  .phone {
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .contact-info p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Mobile first : les sections en colonne (déjà géré) */
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .contact-wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+
+  .contact {
+    flex: 0 0 60%;
+  }
+
+  .contact-info {
+    flex: 0 0 40%;
+  }
+}
+
   @media screen and (min-width: 1024px) {
     .hero-section {
 
@@ -232,6 +322,10 @@
     flex-direction: row;
     align-items: center;
     gap: 2rem;
+  }
+
+  .description {
+        padding: var(--padding-l);
   }
 
   .description_content .image-container,

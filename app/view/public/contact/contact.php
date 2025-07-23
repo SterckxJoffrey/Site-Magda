@@ -15,4 +15,8 @@
     <button type="submit">Envoyer</button>
   </form>
 </section>
+
+<section class="cabinet">
+
+</section>
 </body>
