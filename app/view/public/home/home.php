@@ -33,6 +33,9 @@
 <p>
   <?=$t['description_p3'] ?>
 </p>
+<p>
+  <?=$t['description_p4'] ?>
+</p>
 </div>
 </div>
 </section>

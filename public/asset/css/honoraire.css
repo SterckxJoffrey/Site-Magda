@@ -44,6 +44,7 @@ section p {
   color: var(--text-color);
   line-height: 1.6;
   padding-bottom: 10px;
+  text-align: justify;
 }
 
 /* Images dans les sections */
@@ -67,6 +68,7 @@ section ul li {
   font-size: 1.25rem;
   padding-bottom: var(--padding-s);
   color: var(--text-color);
+  text-align: justify;
 }
 
 /* Styles pour écrans larges */

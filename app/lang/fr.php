@@ -18,9 +18,10 @@ return [
 
     'description_h2' => 'Présentation',
 
-    'description_p1' => 'Avocate au barreau de Bruxelles, Me Tyminska est spécialisée en droit de la famille, droit de la jeunesse, droit immobilier et droit de la circulation routière. Elle met son expertise au service de ses clients avec rigueur, écoute et efficacité.',
-    'description_p2' => 'Diplômée de l’Université Saint-Louis et de l’ULB, elle vous accompagne avec une approche pragmatique et personnalisée.',
-    'description_p3' => 'Bilingue en français et en polonais, elle veille à une communication claire et fluide.',
+    'description_p1' => 'Avocate inscrite au barreau de Bruxelles, Me Tyminska s’est spécialisée en droit de la famille, droit de la jeunesse, droit immobilier et droit de la circulation routière. Elle accompagne ses clients avec rigueur et humanité dans des situations variées : conflits familiaux, procédures devant le tribunal de la jeunesse, litiges locatifs ou encore infractions au code de la route.',
+    'description_p2' => 'Diplômée de l’Université Saint-Louis et titulaire d’un Master en droit de l’Université Libre de Bruxelles, elle allie une formation académique exigeante à une pratique quotidienne du droit, toujours centrée sur les besoins concrets de ses clients.',
+    'description_p3' => 'Dotée d’un grand sens de l’organisation et d’une attention méticuleuse aux détails, elle traite chaque dossier avec sérieux et efficacité. Son approche est pragmatique, personnalisée et orientée vers la recherche de solutions durables. Elle représente ses clients avec détermination devant les juridictions, en veillant à défendre leurs intérêts avec force et intégrité.',
+    'description_p4' => 'Bilingue en français et en polonais, Me Tyminska est en mesure d’assister sa clientèle dans les deux langues, garantissant ainsi une communication claire et fluide.',
 
    'domain_h2' => 'Domaines d\'activité',
 

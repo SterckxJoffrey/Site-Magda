@@ -14,7 +14,7 @@
     z-index: -20;
   }
   
-  
+
   .hero-section::before {
     content: "";
     position: absolute;
@@ -26,16 +26,16 @@
   
   .hero-section h1 {
     /* position: relative; */
-    font-size: 3rem;
+    font-size: 2.2rem;
     color: var(--secondary-color);
     text-transform: uppercase;
-    font-family: 'DM Sans', sans-serif;
+
     font-weight: 700;
     z-index: 10;
   }
   .hero-section h2 {
     z-index: 10;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: var(--secondary-color);
     padding: var(--padding-s);
   }
@@ -87,6 +87,7 @@
     padding-bottom: 20px;
     font-size: 1.1rem;
     color: var(--text-color);
+    text-align: justify;
   }
 
 .domain {
@@ -118,7 +119,7 @@
   font-weight: bold;
   font-size: 1.2rem;
   color: var(--secondary-color);
-
+  text-align: justify;
   margin-top: var(--padding-m);
 }
 
@@ -127,6 +128,7 @@
   font-size: 1.1rem;
   color: var(--text-color);
   line-height: 1.5;
+  text-align: justify;
 }
 
 
@@ -141,6 +143,7 @@
   font-size: 1rem;
   color: var(--text-color);
   margin-bottom: 0.5rem;
+  text-align: justify;
 }
 
 
