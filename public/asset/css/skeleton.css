@@ -50,7 +50,7 @@
   
   .nav-links.open {
     transform: translateX(0);
-    border-bottom: 1px solid var(--primary-color);
+
   }
   
   .nav-links li a {
@@ -62,7 +62,7 @@
     padding: 0.35rem 0.5rem;
     border-radius: 0.3rem;
     transition: var(--transition);
-    border-bottom: 1px solid var(--primary-color);
+
   }
   
   .nav-links li a:hover,
@@ -142,11 +142,7 @@
     background-color: #c6ac92;
 
   }
-    body.domain_page .nav-links li a  {
 
-            border-bottom: 1px solid white;
-
-  }
   body.domain_page .burger .bar {
     background-color: white;
   }
@@ -162,12 +158,23 @@
     body.contact_page.scrolled .nav-links li a {
     color: white;
   }
-    body.contact_page .nav-links li a  {
 
-      border-bottom: 1px solid white;
+  body.presentation_page .burger .bar {
+    background-color: white;
+  }
+      body.presentation_page .navbar  {
+    background-color: #c6ac92;
+        border-bottom: 1px solid white;
+  }
+  body.presentation_page .nav-links  {
+    background-color: #c6ac92;
 
   }
-  body.contact_page .burger .bar {
+    body.presentation_page.scrolled .nav-links li a {
+    color: white;
+  }
+
+  body.presentation_page .burger .bar {
     background-color: white;
   }
 
@@ -182,11 +189,7 @@
     body.honoraire_page.scrolled .nav-links li a {
     color: white;
   }
-    body.honoraire_page .nav-links li a  {
 
-      border-bottom: 1px solid white;
-
-  }
   body.honoraire_page .burger .bar {
     background-color: white;
   }

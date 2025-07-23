@@ -1,29 +1,150 @@
-  .honoraire {
-    display: flex;
-    flex-direction: column;
-    padding: var(--padding-m);
-      gap: var(--padding-s);
-      background-color: #f9f9f9;
-    padding-top: 100px;
-  }
+/* Styles globaux pour toutes les sections */
+section {
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-m);
+  gap: var(--padding-s);
+  background-color: #f9f9f9;
+  /* padding-top: 100px; */
+}
 
-  .honoraire h1 {
-    font-size: 2.2rem;
-    padding: var(--padding-s);
-    text-align: center;
-    justify-content: center;
-        color: var(--primary-color);
-  }
+/* Si tu veux que seul le premier bloc ait un grand espace en haut */
+section:not(:first-of-type) {
+  padding-top: var(--padding-m);
+}
 
-.honoraire img {
-  margin: 1rem auto; /* centrage horizontal automatique */
+/* Titres principaux */
+section h1 {
+  font-size: 2.2rem;
+  padding: var(--padding-s);
+  text-align: center;
+  color: var(--primary-color);
+  padding-top: 100px;
+}
+
+/* Sous-titres */
+section h2 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: var(--padding-m); /* Ajout espace sous h2 mobile */
+}
+
+/* Titres de niveau 3 */
+section h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  color: var(--primary-color);
+}
+
+/* Paragraphes */
+section p {
+  font-size: 1.25rem;
+  color: var(--text-color);
+  line-height: 1.6;
+  padding-bottom: 10px;
+}
+
+/* Images dans les sections */
+section img {
+  margin: 1rem auto 2rem auto; /* Ajout espace sous image */
   border: 4px solid var(--primary-color);
   border-radius: 16px;
   width: 90%;
-  display: block; /* nécessaire pour que margin auto fonctionne */
+  display: block;
 }
-  .honoraire p {
-    padding-bottom: 10px;
-    font-size: 20px;
+
+/* Listes */
+section ul {
+  margin-left: 1.2rem;
+  padding-left: 1rem;
+  list-style: disc;
+  margin-bottom: 1rem;
+}
+
+section ul li {
+  font-size: 1.25rem;
+  padding-bottom: var(--padding-s);
+  color: var(--text-color);
+}
+
+/* Styles pour écrans larges */
+@media (min-width: 1024px) {
+  section h1 {
+    padding-top: 120px;
+    font-size: 2.5rem;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: var(--padding-xl);
+  }
+
+  .hero img {
+    width: 40%;
+    max-width: 500px;
+    border: 4px solid var(--primary-color);
+    border-radius: 16px;
+    margin-left: var(--padding-xl);
+    display: block;
+    object-fit: cover;
+  }
+
+  .right {
+    width: 50%;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .right h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+  }
+
+  .right h2 {
+    font-size: 1.7rem;
+    color: var(--primary-color);
+    padding-bottom: var(--padding-m);
+    margin-bottom: 0; /* Supprime marge mobile, géré en desktop par padding */
+  }
+
+  .right p {
+    font-size: 1.2rem;
+    line-height: 1.7;
     color: var(--text-color);
   }
+
+  .section-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    padding: 2rem var(--padding-m);
+    justify-content: center;
+  }
+
+  .section-group section {
+    background-color: #f9f9f9;
+    padding: var(--padding-m);
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+
+  .section-group .full-width {
+    grid-column: span 2;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  section p {
+    padding-bottom: 0; /* Évite doublons */
+  }
+}
+

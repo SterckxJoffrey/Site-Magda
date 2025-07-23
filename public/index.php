@@ -102,6 +102,7 @@ function render($partial, $data = [], $view_dir = 'public', $lang = 'fr')
     // Génération du menu avec traductions et un seul drapeau (langue non active)
     $menu = <<<HTML
   <li><a href="/{$lang}/home">{$t['nav_home']}</a></li>
+   <li><a href="/{$lang}/presentation">{$t['nav_presentation']}</a></li>
   <li><a href="/{$lang}/domain">{$t['nav_domain']}</a></li>
   <li><a href="/{$lang}/honoraire">{$t['nav_fees']}</a></li>
   <li><a href="/{$lang}/contact" class="CTO">{$t['nav_contact']}</a></li>

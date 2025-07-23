@@ -69,7 +69,7 @@
 
   .description h2 {
     font-size: 2rem;
-    padding: var(--padding-s);
+
     text-align: center;
     justify-content: center;
         color: var(--primary-color);
@@ -79,12 +79,13 @@
   margin: 1rem auto; /* centrage horizontal automatique */
   border: 4px solid var(--primary-color);
   border-radius: 16px;
-  width: 60%;
+  width: 50%;
+  margin-bottom: var(--padding-m);
   display: block; /* nécessaire pour que margin auto fonctionne */
 }
   .description p {
-    padding-bottom: 10px;
-    font-size: 20px;
+    padding-bottom: 20px;
+    font-size: 1.1rem;
     color: var(--text-color);
   }
 
@@ -98,9 +99,13 @@
 
 .domain h2 {
   font-size: 2rem;
-  padding: var(--padding-s);
+  /* padding: var(--padding-s); */
   text-align: center;
   color: var(--secondary-color);
+}
+
+.domain h3 {
+  text-align: center;
 }
 
 .domain ul {
@@ -153,14 +158,14 @@
   }
 
   .contact {
-    padding: 3rem 1rem;
+    padding: 2rem 1rem;
     background-color: #f9f9f9;
     text-align: center;
   }
   
   .contact h2 {
     font-size: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     color: var(--primary-color);
   }
   
@@ -207,3 +212,78 @@
     background-color: #b7997c;
   }
   
+  @media screen and (min-width: 1024px) {
+    .hero-section {
+
+    height: 100vh;
+    }
+      .hero-section::before {
+
+    height: 100vh;
+      }
+
+
+@media screen and (min-width: 1024px) {
+  .description_content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .description_content .image-container,
+  .description_content .text-container {
+    width: 50%;
+  }
+
+  .description_content img {
+    width: 60%;
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .description h2 {
+    text-align: center;
+  }
+
+  .description p {
+    font-size: 1.1rem;
+    padding-bottom: 24px;
+
+  }
+  .text-container {
+    padding: var(--padding-m);
+        padding-right: 60px;
+  }
+
+  .domain-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+
+  }
+  .domain > ul > li {
+    padding-right: 3rem;
+        padding-left: 3rem;
+}
+
+  .domain li {
+
+
+    border-radius: 12px;
+
+  }
+  
+  .domain h3 {
+    text-align: center;
+    padding-bottom: var(--padding-s);
+  }
+
+  .domain h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: var(--padding-s);
+  }
+}
+
+}

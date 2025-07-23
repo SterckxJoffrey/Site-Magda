@@ -1,0 +1,17 @@
+  .domain {
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding-m);
+      gap: var(--padding-s);
+      background-color: #f9f9f9;
+    padding-top: 100px;
+  }
+
+  .domain h1 {
+    font-size: 2.2rem;
+    padding: var(--padding-s);
+    text-align: center;
+    justify-content: center;
+        color: var(--primary-color);
+  }
+
