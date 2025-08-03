@@ -1,22 +1,34 @@
 <body class="contact_page">
-<section class="contact">
-  <h1>Prendre rendez-vous</h1>
-  <?php if (isset($_GET['status']) && $_GET['status'] === 'success'): ?>
-  <p class="success">Votre message a bien été envoyé !</p>
-<?php elseif (isset($_GET['status']) && $_GET['status'] === 'error'): ?>
-  <p class="error">Une erreur est survenue, veuillez réessayer.</p>
-<?php endif; ?>
+<div class="contact-wrapper">
+  <section class="contact">
+    <h2><?=$t['contact_h2'] ?></h2>
+    <form class="contact_form" method="POST" action="contact.php">
+      <input type="text" name="name" id="name" placeholder="Nom" required>
+      <input type="email" name="email" id="email" placeholder="Email" required>
+      <textarea name="message" id="message" placeholder="Votre message..." required></textarea>
+      <button type="submit"><?=$t['contact_button'] ?></button>
+    </form>
+  </section>
 
-<form class="contact_form" method="POST" action="/<?= $lang ?>/contact/send">
+  <section class="contact-info">
+    <h2>Contact</h2>
+    <div>
+      <p class="info-label">Adresse :</p>
+      <p>Av. Louise 230/6, 1050 Bruxelles</p>
+    </div>
+    <div>
+      <p class="info-label">Téléphone :</p>
+      <p>+32 2 467 890 125</p>
+    </div>
+    <div>
+      <p class="info-label">Email :</p>
+      <p>mail@mail.be</p>
+    </div>
+    <div>
+      <p class="info-label">Infos pratiques :</p>
+      <p>Regarde sur Maps zebi</p>
+    </div>
+  </section>
+</div>
 
-    <input type="text" name="name" id="name" placeholder="Nom" required>
-    <input type="email" name="email" id="email" placeholder="Email" required>
-    <textarea name="message" id="message" placeholder="Votre message..." required></textarea>
-    <button type="submit">Envoyer</button>
-  </form>
-</section>
-
-<section class="cabinet">
-
-</section>
 </body>
