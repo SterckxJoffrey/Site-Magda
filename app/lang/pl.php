@@ -64,5 +64,44 @@ return [
     'contact_h2' => 'Umów się na spotkanie',
 
     'contact_button' => 'Wyślij',
+
+
+    // honoraires page
+'titre_honoraires' => 'Honoraria Mecenas Tyminska',
+'alt_image_honoraires' => 'Zdjęcie honorariów',
+'titre_transparence' => 'Podejście oparte na przejrzystości',
+'texte_transparence' => "Mecenas Tyminska przywiązuje ogromną wagę do jasności w relacji z klientami.
+    Zgodnie z zasadami etycznymi obowiązującymi zawód adwokata w Brukseli, dba o to, aby każdy klient
+    był poinformowany, od początku współpracy, o warunkach finansowych jej działań.",
+
+'titre_remuneration' => 'Wynagrodzenie za usługi',
+'intro_remuneration' => "Honoraria Mecenas Tyminska obejmują wszystkie usługi prawne wykonane w ramach prowadzenia sprawy. Obejmuje to w szczególności:",
+'item_remuneration_1' => "Szczegółową analizę sprawy i zgromadzenie dokumentów",
+'item_remuneration_2' => "Sporządzanie pism procesowych (wnioski, pozwy, odpowiedzi procesowe…)",
+'item_remuneration_3' => "Wymianę korespondencji pisemnej (listy, e-maile, SMS-y) oraz ustnej (konsultacje, rozmowy telefoniczne)",
+'item_remuneration_4' => "Badania prawnicze w doktrynie i orzecznictwie",
+'item_remuneration_5' => "Reprezentację przed sądami oraz dojazdy na rozprawy",
+'item_remuneration_6' => "Spotkania negocjacyjne lub koordynacyjne",
+'conclusion_remuneration' => "Każda czynność, czy jest widoczna dla klienta, czy nie, jest istotna dla prawidłowego prowadzenia sprawy.",
+
+'titre_frais_supplementaires' => 'Poza honorariami mogą wystąpić dodatkowe koszty:',
+
+'titre_frais_internes' => '§ Koszty wewnętrzne',
+'intro_frais_internes' => 'Koszty te dotyczą aspektów administracyjnych związanych z prowadzeniem sprawy:',
+'item_frais_internes_1' => 'Otwarcie i zamknięcie sprawy',
+'item_frais_internes_2' => 'Drukowanie, kopiowanie, wysyłka pocztowa lub elektroniczna',
+'item_frais_internes_3' => 'Przygotowanie akt rozprawy itp.',
+
+'titre_frais_justice' => '§ Wydatki i koszty sądowe',
+'intro_frais_justice' => 'Są to koszty ponoszone w imieniu klienta lub opłacane bezpośrednio, takie jak:',
+'item_frais_justice_1' => 'Opłaty dla komornika, sądu, biegłego',
+'item_frais_justice_2' => 'Uzyskanie dokumentów urzędowych (akty stanu cywilnego, rejestr narodowy...)',
+'item_frais_justice_3' => 'Koszty ekspertyz',
+
+'titre_facturation' => 'Zaliczki i fakturowanie',
+'paragraphe_facturation_1' => "Przed rozpoczęciem zlecenia, a także w trakcie jego realizacji, Mecenas Tyminska może zażądać jednej lub kilku zaliczek.
+    Kwoty te, wpłacone z góry, zostaną odliczone od ostatecznego rozliczenia kosztów i honorariów.",
+'paragraphe_facturation_2' => "Klient może otrzymywać okresowe zestawienia w celu zapewnienia regularnego i przejrzystego monitoringu."
+
 ];
 
