@@ -67,48 +67,10 @@
 
       <section class="domain">
     <h1>Domaines d’intervention</h1>
-    <div class="hero">
-    <img src="/asset/img/honoraire.jpg" alt="Honoraire photo">
-    <div class="right">
-        <article>
-          <h2 >Droit immobilier</h2>
-          <p class="bold">Vous êtes confronté à un litige avec votre locataire ou votre propriétaire ? Vous avez des questions sur un bail ou une copropriété ?</p>
-          <p class="bold">Me Tyminska vous assiste dans tous les aspects du droit immobilier.</p>
-          <ul>
-            <li>les loyers impayés et les procédures d’expulsion ;</li>
-            <li>la rédaction et l’analyse de baux ;</li>
-            <li>les conflits entre bailleurs et locataires ;</li>
-            <li>les troubles de voisinage ;</li>
-            <li>les litiges en copropriété.</li>
-          </ul>
-          <p class="bold">Elle privilégie la résolution amiable, tout en étant prête à défendre vos droits devant les juridictions.</p>
-        </article>
-      </div>
-      </div>
-    </section>
-    <section class="domain_left">
-    <div class="hero_left">
-    <img src="/asset/img/honoraire.jpg" alt="Honoraire photo">
-    <div class="left">
-        <article>
-          <h2>Droit de la jeunesse</h2>
-          <p class="bold">Votre enfant est convoqué devant le tribunal de la jeunesse ? Vous êtes inquiet face à une mesure de placement ou une audition policière ?</p>
-          <p class="bold">Me Tyminska intervient auprès des mineurs, qu’ils soient en conflit avec la loi ou en danger.</p>
-          <ul>
-            <li>la défense des mineurs délinquants devant le tribunal de la jeunesse </li>
-            <li>l’assistance dans le cadre de mesures de protection </li>
-            <li>l’accompagnement lors des auditions à la police </li>
-            <li>l’intervention pour les mineurs en danger ou en situation de vulnérabilité </li>
-            <li>la coordination avec les parents, les services sociaux et le SAJ.</li>
-          </ul>
-          <p class = "bold">Me Tyminska veille à garantir une prise en charge individualisée, dans le respect de l’intérêt supérieur de l’enfant.</p>
-        </article>
-      </div>
-      <!-- </div> -->
-    </section>
-    <section class="domain">
+      </section>
+        <section class="domain">
         <div class="hero">
-    <img src="/asset/img/honoraire.jpg" alt="Honoraire photo">
+    <img src="/asset/img/droit_famille.jpg" alt="Honoraire photo">
     <div class="right">
         <article>
           <h2 class="bold">Droit de la famille</h3>
@@ -127,9 +89,50 @@
       </div>
       </div>
     </section>
+
+    <section class="domain_left">
+    <div class="hero_left">
+    <img src="/asset/img/droit_jeunesse.jpg" alt="Honoraire photo">
+    <div class="left">
+        <article>
+          <h2>Droit de la jeunesse</h2>
+          <p class="bold">Votre enfant est convoqué devant le tribunal de la jeunesse ? Vous êtes inquiet face à une mesure de placement ou une audition policière ?</p>
+          <p class="bold">Me Tyminska intervient auprès des mineurs, qu’ils soient en conflit avec la loi ou en danger.</p>
+          <ul>
+            <li>la défense des mineurs délinquants devant le tribunal de la jeunesse </li>
+            <li>l’assistance dans le cadre de mesures de protection </li>
+            <li>l’accompagnement lors des auditions à la police </li>
+            <li>l’intervention pour les mineurs en danger ou en situation de vulnérabilité </li>
+            <li>la coordination avec les parents, les services sociaux et le SAJ.</li>
+          </ul>
+          <p class = "bold">Me Tyminska veille à garantir une prise en charge individualisée, dans le respect de l’intérêt supérieur de l’enfant.</p>
+        </article>
+      </div>
+      <!-- </div> -->
+    </section>
+    <section class="domain">
+    <div class="hero">
+    <img src="/asset/img/droit_immobiliser.jpg" alt="Honoraire photo">
+    <div class="right">
+        <article>
+          <h2 >Droit immobilier</h2>
+          <p class="bold">Vous êtes confronté à un litige avec votre locataire ou votre propriétaire ? Vous avez des questions sur un bail ou une copropriété ?</p>
+          <p class="bold">Me Tyminska vous assiste dans tous les aspects du droit immobilier.</p>
+          <ul>
+            <li>les loyers impayés et les procédures d’expulsion ;</li>
+            <li>la rédaction et l’analyse de baux ;</li>
+            <li>les conflits entre bailleurs et locataires ;</li>
+            <li>les troubles de voisinage ;</li>
+            <li>les litiges en copropriété.</li>
+          </ul>
+          <p class="bold">Elle privilégie la résolution amiable, tout en étant prête à défendre vos droits devant les juridictions.</p>
+        </article>
+      </div>
+      </div>
+    </section>
         <section class="domain_left">
     <div class="hero_left">
-    <img src="/asset/img/honoraire.jpg" alt="Honoraire photo">
+    <img src="/asset/img/droit_route.jpg" alt="Honoraire photo">
     <div class="left">
         <article>
           <h2>Droit de la circulation routière</h2>
