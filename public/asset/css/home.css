@@ -93,7 +93,7 @@
 .domain {
   display: flex;
   flex-direction: column;
-  background-color: var(--background);
+  background-color: var(--primary-color);
   padding: var(--padding-m);
   gap: var(--padding-s);
 }
