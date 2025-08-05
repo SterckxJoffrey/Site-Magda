@@ -106,7 +106,7 @@
       </div>
       <!-- </div> -->
     </section>
-    <section>
+    <section class="domain">
         <div class="hero">
     <img src="/asset/img/honoraire.jpg" alt="Honoraire photo">
     <div class="right">
