@@ -239,6 +239,9 @@
       font-size: 1rem;
       width: auto;
     }
+        .nav-links li a:hover {
+          border: 1px solid white;
+    }
   
     .nav-user {
       flex-direction: row;

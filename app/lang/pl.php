@@ -18,6 +18,8 @@ return [
     'description_p1' => 'Adwokat Magdalena TYMINSKA prowadzi niezależną praktykę prawniczą w Brukseli, oferując szeroką wiedzę z zakresu prawa rodzinnego, drogowego i prawa jazdy, prawa cywilnego, rozwodów, prawa karnego, najmu komercyjnego, prawa nieletnich oraz prawa nieruchomości.',
     'description_p2' => 'Dzięki swojej rzetelności, profesjonalizmowi oraz umiejętności słuchania, jest adwokatem godnym zaufania. Każdy klient jest dla Mecenas TYMINSKIEJ wyjątkowy i ważny – dąży ona do szybkiej odpowiedzi na każde zapytanie i do jak najlepszego reprezentowania interesów klienta.',
     'description_p3' => 'Magister prawa ze specjalizacją w prawie cywilnym i karnym',
+    'description_p4' => 'Dwujęzyczna w języku francuskim i polskim, mecenas Tyminska jest w stanie obsługiwać swoich klientów w obu językach, zapewniając tym samym jasną i płynną komunikację.',
+
 
     'domain_h2' => 'Specjalizacje',
 
@@ -101,7 +103,78 @@ return [
 'titre_facturation' => 'Zaliczki i fakturowanie',
 'paragraphe_facturation_1' => "Przed rozpoczęciem zlecenia, a także w trakcie jego realizacji, Mecenas Tyminska może zażądać jednej lub kilku zaliczek.
     Kwoty te, wpłacone z góry, zostaną odliczone od ostatecznego rozliczenia kosztów i honorariów.",
-'paragraphe_facturation_2' => "Klient może otrzymywać okresowe zestawienia w celu zapewnienia regularnego i przejrzystego monitoringu."
+'paragraphe_facturation_2' => "Klient może otrzymywać okresowe zestawienia w celu zapewnienia regularnego i przejrzystego monitoringu.",
+
+
+
+'titre_domaines' => 'Obszary działalności',
+
+// --- Prawo rodzinne ---
+'alt_droit_famille' => 'Ilustracja do prawa rodzinnego',
+'titre_droit_famille' => 'Prawo rodzinne',
+'intro_droit_famille_1' => 'Przechodzisz przez trudny rozwód? Zastanawiasz się nad opieką nad dziećmi lub podziałem majątku?',
+'intro_droit_famille_2' => 'Me Tyminska wspiera Cię na każdym etapie życia rodzinnego, z uważnością, rygorem i człowieczeństwem. Zajmuje się między innymi:',
+'droit_famille_1' => 'postępowaniami rozwodowymi, zarówno polubownymi, jak i konfliktowymi',
+'droit_famille_2' => 'likwidacją wspólnoty majątkowej i podziałem majątku',
+'droit_famille_3' => 'ustaleniem opieki nad dziećmi, prawami do odwiedzin i zamieszkania',
+'droit_famille_4' => 'alimentami i wsparciem finansowym',
+'droit_famille_5' => 'postępowaniami adopcyjnymi',
+'droit_famille_6' => 'uznaniem lub zaprzeczeniem ojcostwa',
+'conclusion_droit_famille' => 'Świadoma emocjonalnego ciężaru tych sytuacji, Me Tyminska stawia na podejście ludzkie i pragmatyczne.',
+
+// --- Prawo młodzieżowe ---
+'alt_droit_jeunesse' => 'Ilustracja do prawa młodzieżowego',
+'titre_droit_jeunesse' => 'Prawo młodzieżowe',
+'intro_droit_jeunesse_1' => 'Twoje dziecko zostało wezwane przed sąd rodzinny? Martwisz się o umieszczenie lub przesłuchanie w policji?',
+'intro_droit_jeunesse_2' => 'Me Tyminska działa na rzecz niepełnoletnich, niezależnie od tego, czy są w konflikcie z prawem, czy są zagrożeni.',
+'droit_jeunesse_1' => 'obrona nieletnich sprawców przed sądem rodzinnym',
+'droit_jeunesse_2' => 'pomoc w ramach środków ochronnych',
+'droit_jeunesse_3' => 'wspieranie podczas przesłuchań policyjnych',
+'droit_jeunesse_4' => 'interwencja dla nieletnich zagrożonych lub w trudnej sytuacji',
+'droit_jeunesse_5' => 'koordynacja z rodzicami, służbami socjalnymi i SAJ',
+'conclusion_droit_jeunesse' => 'Me Tyminska zapewnia indywidualne podejście, z poszanowaniem najwyższego dobra dziecka.',
+
+// --- Prawo nieruchomości ---
+'alt_droit_immobilier' => 'Ilustracja do prawa nieruchomości',
+'titre_droit_immobilier' => 'Prawo nieruchomości',
+'intro_droit_immobilier_1' => 'Masz spór z najemcą lub właścicielem? Masz pytania dotyczące umowy najmu lub wspólnoty mieszkaniowej?',
+'intro_droit_immobilier_2' => 'Me Tyminska pomaga we wszystkich aspektach prawa nieruchomości.',
+'droit_immobilier_1' => 'niepłacone czynsze i procedury eksmisji',
+'droit_immobilier_2' => 'sporządzanie i analiza umów najmu',
+'droit_immobilier_3' => 'spory między wynajmującymi a najemcami',
+'droit_immobilier_4' => 'zakłócenia spokoju sąsiedzkiego',
+'droit_immobilier_5' => 'spory we wspólnotach mieszkaniowych',
+'conclusion_droit_immobilier' => 'Preferuje polubowne rozwiązania, będąc jednocześnie gotowa bronić Twoich praw przed sądem.',
+
+// --- Prawo ruchu drogowego ---
+'alt_droit_routier' => 'Ilustracja do prawa ruchu drogowego',
+'titre_droit_routier' => 'Prawo ruchu drogowego',
+'intro_droit_routier_1' => 'Otrzymałeś wezwanie za wykroczenie drogowe? Grozi Ci zawieszenie prawa jazdy lub utrata uprawnień?',
+'intro_droit_routier_2' => 'Me Tyminska broni Cię z rygorem i jasnością.',
+'droit_routier_1' => 'przekroczenie prędkości, używanie telefonu podczas jazdy',
+'droit_routier_2' => 'zatrzymanie lub zawieszenie prawa jazdy',
+'droit_routier_3' => 'utrata prawa do prowadzenia pojazdów',
+'droit_routier_4' => 'prowadzenie pojazdu pod wpływem alkoholu lub narkotyków',
+'droit_routier_5' => 'odpowiedzialność w razie wypadku',
+'conclusion_droit_routier' => 'Informuje o Twoich prawach i dokłada wszelkich starań, by ograniczyć skutki prawne i finansowe.',
+
+'contact_success' => 'Twoja wiadomość została wysłana.',
+'contact_error' => 'Wystąpił błąd. Proszę spróbuj ponownie.',
+
+
+  'contact_name' => 'Imię',
+  'contact_email' => 'Email',
+  'contact_message' => 'Twoja wiadomość...',
+  'contact_button' => 'Wyślij',
+
+
+  'contact_title' => 'Kontakt',
+'contact_address_label' => 'Adres:',
+'contact_address' => 'Av. Louise 230/6, 1050 Bruksela',
+'contact_phone_label' => 'Telefon:',
+'contact_email_label' => 'E-mail:',
+'contact_info_label' => 'Informacje praktyczne:',
+'contact_info_text' => 'Sprawdź w Mapach',
 
 ];
 

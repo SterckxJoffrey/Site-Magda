@@ -11,6 +11,7 @@
 .contact {
   flex: 1;
   text-align: center;
+  
 }
 
 .contact h2 {
@@ -85,13 +86,22 @@
 .contact-info .info-label {
   color: #c6ac92;
   font-weight: bold;
+  font-size: 1.3rem;
 }
 
 .contact-info p {
-  margin: 0.2rem 0 1rem 0;
+  margin: 0.2rem 0 1.2rem 0;
   text-align: center;
 }
 
+.contact-info a {
+  color: var(--text-color);
+  text-decoration: underline;
+}
+
+.contact-info a:hover {
+  text-decoration: none;
+}
 /* Desktop */
 @media (min-width: 1024px) {
   .contact-wrapper {
@@ -102,21 +112,62 @@
     gap: 4rem;
   }
 
+  .contact {
+    padding-right: 20px;
+  }
+
   .contact,
   .contact-info {
     text-align: left;
   }
 
-  .contact-info h2 {
+  .contact-info {
+    position: relative;
     padding-top: 100px;
   }
 
+  .contact-info::before {
+    content: '';
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 1px;
+    height: calc(100% - 100px);
+    background-color: var(--primary-color); /* ou une autre couleur visible */
+  }
+
+
+
+  /* .contact-info h2 {
+    padding-top: 100px;
+  } */
+
 
   .contact {
-    flex: 0 0 60%;
+    flex: 0 0 55%;
   }
 
   .contact-info {
-    flex: 0 0 40%;
+    flex: 0 0 45%;
   }
+}
+
+.message {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.message.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
 }

@@ -19,16 +19,13 @@ function send()
         $email = htmlspecialchars(trim($_POST['email']));
         $message = htmlspecialchars(trim($_POST['message']));
 
-        // Ici tu envoies le mail (ou le simules)
-        $to = 'ton.email@exemple.com'; // à remplacer
-        $subject = 'Nouveau message depuis le site';
-        $body = "Nom : $name\nEmail : $email\n\nMessage :\n$message";
-        $headers = "From: $email\r\n" .
-                   "Reply-To: $email\r\n" .
-                   "X-Mailer: PHP/" . phpversion();
+        if (empty($name) || empty($email) || empty($message)) {
+            header("Location: /$lang/contact?status=error");
+            exit;
+        }
 
-        // Envoi du mail (fonctionne uniquement si ton serveur mail local est bien configuré)
-        $success = mail($to, $subject, $body, $headers);
+        // Simulation d'envoi réussi (car mail() ne fonctionne pas forcément sur MAMP)
+        $success = true;
 
         // Redirection vers la page contact avec paramètre de résultat
         $status = $success ? 'success' : 'error';
@@ -36,7 +33,7 @@ function send()
         exit;
     }
 
-    // Si quelqu’un tente d’accéder à la route sans POST
+    // Si on accède à cette route sans POST
     header("Location: /$lang/contact");
     exit;
 }

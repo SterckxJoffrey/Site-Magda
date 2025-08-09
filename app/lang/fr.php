@@ -109,5 +109,77 @@ return [
         Ces montants, versés à titre d’avance, seront déduits de l’état final des frais et honoraires.",
     'paragraphe_facturation_2' => "Des états intermédiaires peuvent être transmis au client afin d’assurer un suivi régulier et transparent.",
 
+// domain page
+    // Titre principal
+    'titre_domaines' => 'Domaines d’intervention',
+
+    // --- Droit de la famille ---
+    'alt_droit_famille' => 'Illustration pour le droit de la famille',
+    'titre_droit_famille' => 'Droit de la famille',
+    'intro_droit_famille_1' => 'Vous traversez une séparation difficile ? Vous vous interrogez sur la garde de vos enfants ou sur le partage de vos biens ?',
+    'intro_droit_famille_2' => 'Me Tyminska vous accompagne à chaque étape de votre vie familiale, avec écoute, rigueur et humanité. Elle intervient notamment dans :',
+    'droit_famille_1' => 'les procédures de divorce, qu’elles soient amiables ou conflictuelles',
+    'droit_famille_2' => 'la liquidation du régime matrimonial et le partage des biens',
+    'droit_famille_3' => 'la fixation de la garde des enfants, les droits de visite et d’hébergement',
+    'droit_famille_4' => 'la contribution alimentaire et la pension alimentaire',
+    'droit_famille_5' => 'les procédures d’adoption',
+    'droit_famille_6' => 'la reconnaissance ou la contestation de filiation',
+    'conclusion_droit_famille' => 'Consciente de la charge émotionnelle que ces situations impliquent, Me Tyminska privilégie une approche humaine et pragmatique.',
+
+    // --- Droit de la jeunesse ---
+    'alt_droit_jeunesse' => 'Illustration pour le droit de la jeunesse',
+    'titre_droit_jeunesse' => 'Droit de la jeunesse',
+    'intro_droit_jeunesse_1' => 'Votre enfant est convoqué devant le tribunal de la jeunesse ? Vous êtes inquiet face à une mesure de placement ou une audition policière ?',
+    'intro_droit_jeunesse_2' => 'Me Tyminska intervient auprès des mineurs, qu’ils soient en conflit avec la loi ou en danger.',
+    'droit_jeunesse_1' => 'la défense des mineurs délinquants devant le tribunal de la jeunesse',
+    'droit_jeunesse_2' => 'l’assistance dans le cadre de mesures de protection',
+    'droit_jeunesse_3' => 'l’accompagnement lors des auditions à la police',
+    'droit_jeunesse_4' => 'l’intervention pour les mineurs en danger ou en situation de vulnérabilité',
+    'droit_jeunesse_5' => 'la coordination avec les parents, les services sociaux et le SAJ',
+    'conclusion_droit_jeunesse' => 'Me Tyminska veille à garantir une prise en charge individualisée, dans le respect de l’intérêt supérieur de l’enfant.',
+
+    // --- Droit immobilier ---
+    'alt_droit_immobilier' => 'Illustration pour le droit immobilier',
+    'titre_droit_immobilier' => 'Droit immobilier',
+    'intro_droit_immobilier_1' => 'Vous êtes confronté à un litige avec votre locataire ou votre propriétaire ? Vous avez des questions sur un bail ou une copropriété ?',
+    'intro_droit_immobilier_2' => 'Me Tyminska vous assiste dans tous les aspects du droit immobilier.',
+    'droit_immobilier_1' => 'les loyers impayés et les procédures d’expulsion',
+    'droit_immobilier_2' => 'la rédaction et l’analyse de baux',
+    'droit_immobilier_3' => 'les conflits entre bailleurs et locataires',
+    'droit_immobilier_4' => 'les troubles de voisinage',
+    'droit_immobilier_5' => 'les litiges en copropriété',
+    'conclusion_droit_immobilier' => 'Elle privilégie la résolution amiable, tout en étant prête à défendre vos droits devant les juridictions.',
+
+    // --- Droit de la circulation routière ---
+    'alt_droit_routier' => 'Illustration pour le droit de la circulation routière',
+    'titre_droit_routier' => 'Droit de la circulation routière',
+    'intro_droit_routier_1' => 'Vous avez reçu une convocation pour une infraction au code de la route ? Vous risquez une suspension de permis ou une déchéance ?',
+    'intro_droit_routier_2' => 'Me Tyminska vous défend avec rigueur et clarté.',
+    'droit_routier_1' => 'excès de vitesse, usage du téléphone au volant',
+    'droit_routier_2' => 'retrait ou suspension de permis',
+    'droit_routier_3' => 'déchéance du droit de conduire',
+    'droit_routier_4' => 'conduite sous l’influence d’alcool ou de stupéfiants',
+    'droit_routier_5' => 'responsabilité en cas d’accident',
+    'conclusion_droit_routier' => 'Elle vous informe de vos droits et met tout en œuvre pour limiter les conséquences juridiques et financières.',
+
+
+
+
+    'contact_success' => 'Votre message a bien été envoyé.',
+'contact_error' => 'Une erreur est survenue. Veuillez réessayer.',
+
+
+  'contact_name' => 'Nom',
+  'contact_email' => 'Email',
+  'contact_message' => 'Votre message...',
+  'contact_button' => 'Envoyer',
+
+  'contact_title' => 'Contact',
+'contact_address_label' => 'Adresse :',
+'contact_address' => 'Av. Louise 230/6, 1050 Bruxelles',
+'contact_phone_label' => 'Téléphone :',
+'contact_email_label' => 'Email :',
+'contact_info_label' => 'Infos pratiques :',
+'contact_info_text' => 'Regarde sur Maps zebi',
 
 ];

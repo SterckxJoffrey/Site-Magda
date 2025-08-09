@@ -124,36 +124,51 @@
 
 
 <div class="contact-wrapper">
-  <section class="contact">
-    <h2><?=$t['contact_h2'] ?></h2>
-    <form class="contact_form" method="POST" action="contact.php">
-      <input type="text" name="name" id="name" placeholder="Nom" required>
-      <input type="email" name="email" id="email" placeholder="Email" required>
-      <textarea name="message" id="message" placeholder="Votre message..." required></textarea>
-      <button type="submit"><?=$t['contact_button'] ?></button>
-    </form>
-  </section>
+<section class="contact">
+  <h2><?=$t['contact_h2'] ?></h2>
 
-  <section class="contact-info">
-    <h2>Contact</h2>
+  <?php if (isset($_GET['status'])): ?>
+    <div class="message <?= $_GET['status'] === 'success' ? 'success' : 'error' ?>">
+      <?php if ($_GET['status'] === 'success'): ?>
+        <?=$t['contact_success'] ?>
+      <?php else: ?>
+        <?=$t['contact_error'] ?>
+      <?php endif; ?>
+    </div>
+  <?php endif; ?>
+
+<form class="contact_form" method="POST" action="/<?= $lang ?>/contact/send">
+  <input type="text" name="name" id="name" placeholder="<?= $t['contact_name'] ?>" required>
+  <input type="email" name="email" id="email" placeholder="<?= $t['contact_email'] ?>" required>
+  <textarea name="message" id="message" placeholder="<?= $t['contact_message'] ?>" required></textarea>
+  <button type="submit"><?= $t['contact_button'] ?></button>
+</form>
+</section>
+
+
+<section class="contact-info">
+    <h2><?= $t['contact_title'] ?></h2>
     <div>
-      <p class="info-label">Adresse :</p>
-      <p>Av. Louise 230/6, 1050 Bruxelles</p>
+        <p class="info-label"><?= $t['contact_address_label'] ?></p>
+        <p><?= $t['contact_address'] ?></p>
     </div>
     <div>
-      <p class="info-label">Téléphone :</p>
-      <p>+32 2 467 890 125</p>
+        <p class="info-label"><?= $t['contact_phone_label'] ?></p>
+        <p id="phone-link"></p>
     </div>
     <div>
-      <p class="info-label">Email :</p>
-      <p>mail@mail.be</p>
+        <p class="info-label"><?= $t['contact_email_label'] ?></p>
+        <p id="email-link"></p>
     </div>
     <div>
-      <p class="info-label">Infos pratiques :</p>
-      <p>Regarde sur Maps zebi</p>
+        <p class="info-label"><?= $t['contact_info_label'] ?></p>
+        <p><?= $t['contact_info_text'] ?></p>
     </div>
-  </section>
+</section>
+
 </div>
+<script src="/asset/js/mail.js" defer></script>
+<script src="/asset/js/phone.js" defer></script>
 
 
 </body>
