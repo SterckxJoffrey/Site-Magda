@@ -1,5 +1,12 @@
 <?php
 return [
+    'meta_description_home' => 'Adwokat przy Izbie Adwokackiej w Brukseli, mec. Tyminska specjalizuje się w prawie rodzinnym, nieletnich, nieruchomości i ruchu drogowym, oferując rzetelną i ludzką pomoc.',
+    'meta_description_honoraires' => "Poznaj jasne i przejrzyste honoraria Maître Tyminska, obejmujące usługi prawne, opłaty administracyjne oraz fakturowanie zapewniające transparentną obsługę Twojej sprawy.",
+    'meta_description_domaines' => "Poznaj obszary działalności mecenas Tyminska: prawo rodzinne, prawo młodzieżowe, prawo nieruchomości oraz prawo ruchu drogowego. Profesjonalne i empatyczne wsparcie w obronie Twoich praw w każdej sytuacji.",
+    'meta_description_contact' => "Skontaktuj się z mecenas Tyminska, aby umówić się na indywidualną konsultację prawną. Jesteśmy do dyspozycji, aby odpowiedzieć na Twoje pytania i pomóc w kwestiach prawnych.",
+
+
+
     'nav_home' => 'Strona główna',
     'nav_domain' => 'Specjalizacje',
     'nav_fees' => 'Honoraria',

@@ -113,6 +113,7 @@ HTML;
     // Injections dans le squelette
     $page = str_replace('%%HEAD_TITLE%%', $data['head_title'] ?? 'Mon site', $page);
     $page = str_replace('%%ADDITIONAL_CSS%%', $data['additional_css'] ?? '', $page);
+    $page = str_replace('%%META_DESCRIPTION%%', htmlspecialchars($data['meta_description'] ?? ''), $page);
     $page = str_replace('%%ADDITIONAL_JS%%', $data['additional_js'] ?? '', $page);
     $page = str_replace('%%MAIN_CONTENT%%', $partialContent, $page);
     $page = str_replace('%%MENU%%', $menu, $page);
