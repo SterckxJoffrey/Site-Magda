@@ -7,7 +7,7 @@ function index()
     $t = file_exists($translations_file) ? include $translations_file : [];
 
     render('home/home.php', [
-        'head_title' => 'Accueil',
+        'head_title' => $t['head_title_home'],
         'additional_css' => '<link rel="stylesheet" href="/asset/css/home.css">',
         'meta_description' => $t['meta_description_home'],
     ], 'public', $lang);

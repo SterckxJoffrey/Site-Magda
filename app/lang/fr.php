@@ -1,5 +1,10 @@
 <?php
 return [
+    'head_title_home' => 'Accueil - Maître Tyminska, Avocat à Bruxelles',
+    'head_title_domaines' => 'Domaines d’intervention - Maître Tyminska, Avocate à Bruxelles',
+    'head_title_honoraires' => 'Honoraires de Maître Tyminska - Avocate à Bruxelles',
+     'head_title_contact' => 'Contactez Maître Tyminska - Avocate à Bruxelles',
+
     'meta_description_home' => 'Avocate au barreau de Bruxelles, Me Tyminska vous accompagne en droit de la famille, jeunesse, immobilier et circulation routière, avec rigueur et humanité.',
     'meta_description_honoraires' => "Découvrez les honoraires clairs et transparents de Maître Tyminska, détaillant les prestations juridiques, les frais administratifs et la facturation pour un suivi transparent de votre dossier.",
     'meta_description_domaines' => "Découvrez les domaines d'intervention de Maître Tyminska : droit de la famille, droit de la jeunesse, droit immobilier et droit de la circulation routière. Un accompagnement rigoureux et humain pour défendre vos droits dans toutes les situations.",

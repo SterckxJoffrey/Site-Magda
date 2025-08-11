@@ -7,7 +7,7 @@ function index()
     $t = file_exists($translations_file) ? include $translations_file : [];
 
     render('contact/contact.php', [
-        'head_title' => 'Contact',
+        'head_title' => $t['head_title_contact'] ?? 'Contact',
         'additional_css' => '<link rel="stylesheet" href="/asset/css/contact.css">',
         'meta_description' => $t['meta_description_contact'] ?? '',
     ], 'public', $lang);
