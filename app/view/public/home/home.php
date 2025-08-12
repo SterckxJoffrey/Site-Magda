@@ -137,7 +137,8 @@
     </div>
   <?php endif; ?>
 
-<form class="contact_form" method="POST" action="/<?= $lang ?>/contact/send">
+<form class="contact_form" id="contact_form" method="POST" action="/<?= $lang ?>/contact/send">
+  <input type="hidden" name="origin" value="home">
   <input type="text" name="name" id="name" placeholder="<?= $t['contact_name'] ?>" required>
   <input type="email" name="email" id="email" placeholder="<?= $t['contact_email'] ?>" required>
   <textarea name="message" id="message" placeholder="<?= $t['contact_message'] ?>" required></textarea>
@@ -151,6 +152,7 @@
     <div>
         <p class="info-label"><?= $t['contact_address_label'] ?></p>
         <p><?= $t['contact_address'] ?></p>
+        <p><?= $t['contact_town'] ?></p>
     </div>
     <div>
         <p class="info-label"><?= $t['contact_phone_label'] ?></p>
@@ -162,7 +164,7 @@
     </div>
     <div>
         <p class="info-label"><?= $t['contact_info_label'] ?></p>
-        <p><?= $t['contact_info_text'] ?></p>
+        <p class="info"><?= $t['contact_info_text'] ?></p>
     </div>
 </section>
 

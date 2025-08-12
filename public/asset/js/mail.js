@@ -1,6 +1,6 @@
 
-  const emailUser = "mail";
-  const emailDomain = "mail.be";
+  const emailUser = "Magdalena.tyminska";
+  const emailDomain = "avocat.be";
   const emailFull = `${emailUser}@${emailDomain}`;
   const mailto = `mailto:${emailFull}`;
 

@@ -5,7 +5,7 @@ return [
     'head_title_honoraires' => 'Honoraria Mecenas Tyminska - Adwokat w Brukseli',
     'head_title_contact' => 'Skontaktuj się z Mecenas Tyminska - Adwokat w Brukseli',
 
-    'meta_description_home' => 'Adwokat przy Izbie Adwokackiej w Brukseli, mec. Tyminska specjalizuje się w prawie rodzinnym, nieletnich, nieruchomości i ruchu drogowym, oferując rzetelną i ludzką pomoc.',
+    'meta_description_home' => 'Adwokatka z Brukseli, mecenas Tyminska wspiera Cię w prawie rodzinnym, młodzieżowym, nieruchomości oraz ruchu drogowym. Biegle włada językiem francuskim i polskim, oferując jasną i spersonalizowaną pomoc.',
     'meta_description_honoraires' => "Poznaj jasne i przejrzyste honoraria Maître Tyminska, obejmujące usługi prawne, opłaty administracyjne oraz fakturowanie zapewniające transparentną obsługę Twojej sprawy.",
     'meta_description_domaines' => "Poznaj obszary działalności mecenas Tyminska: prawo rodzinne, prawo młodzieżowe, prawo nieruchomości oraz prawo ruchu drogowego. Profesjonalne i empatyczne wsparcie w obronie Twoich praw w każdej sytuacji.",
     'meta_description_contact' => "Skontaktuj się z mecenas Tyminska, aby umówić się na indywidualną konsultację prawną. Jesteśmy do dyspozycji, aby odpowiedzieć na Twoje pytania i pomóc w kwestiach prawnych.",
@@ -182,11 +182,16 @@ return [
 
   'contact_title' => 'Kontakt',
 'contact_address_label' => 'Adres:',
-'contact_address' => 'Av. Louise 230/6, 1050 Bruksela',
+'contact_address' => 'Av. Louise 230/6,',
+'contact_town' => '1050 Bruksela',
 'contact_phone_label' => 'Telefon:',
-'contact_email_label' => 'E-mail:',
+'contact_email_label' => 'Email:',
 'contact_info_label' => 'Informacje praktyczne:',
-'contact_info_text' => 'Sprawdź w Mapach',
+'contact_info_text' => 'Dostępne przez metro Louise (linie 2 i 6) lub tramwaj 8, 93, 94. Parking publiczny w pobliżu.',
+
+'404_title' => 'Ups... Strona nie znaleziona',
+'404_message' => 'Strona, której szukasz, nie istnieje lub została przeniesiona.',
+'404_back_home' => 'Powrót do strony głównej',
 
 ];
 

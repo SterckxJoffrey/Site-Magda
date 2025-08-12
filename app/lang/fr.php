@@ -5,7 +5,7 @@ return [
     'head_title_honoraires' => 'Honoraires de Maître Tyminska - Avocate à Bruxelles',
      'head_title_contact' => 'Contactez Maître Tyminska - Avocate à Bruxelles',
 
-    'meta_description_home' => 'Avocate au barreau de Bruxelles, Me Tyminska vous accompagne en droit de la famille, jeunesse, immobilier et circulation routière, avec rigueur et humanité.',
+'meta_description_home' => 'Avocate au barreau de Bruxelles, Me Tyminska vous accompagne en droit de la famille, jeunesse, immobilier et circulation routière. Bilingue français et polonais, elle vous offre une assistance claire et personnalisée.',
     'meta_description_honoraires' => "Découvrez les honoraires clairs et transparents de Maître Tyminska, détaillant les prestations juridiques, les frais administratifs et la facturation pour un suivi transparent de votre dossier.",
     'meta_description_domaines' => "Découvrez les domaines d'intervention de Maître Tyminska : droit de la famille, droit de la jeunesse, droit immobilier et droit de la circulation routière. Un accompagnement rigoureux et humain pour défendre vos droits dans toutes les situations.",
     'meta_description_contact' => "Contactez Maître Tyminska pour une consultation juridique personnalisée. Disponible pour répondre à vos questions et vous accompagner dans vos démarches légales.",
@@ -190,10 +190,15 @@ return [
 
   'contact_title' => 'Contact',
 'contact_address_label' => 'Adresse :',
-'contact_address' => 'Av. Louise 230/6, 1050 Bruxelles',
+'contact_address' => 'Avenue Louise 230/6,',
+'contact_town' => '1050 Bruxelles',
 'contact_phone_label' => 'Téléphone :',
 'contact_email_label' => 'Email :',
 'contact_info_label' => 'Infos pratiques :',
-'contact_info_text' => 'Regarde sur Maps zebi',
+'contact_info_text' => 'Accessible via métro Louise (lignes 2 & 6) ou tram 8, 93, 94. Parkings publics à proximité.',
+
+'404_title' => 'Oups... Page introuvable',
+'404_message' => 'La page que vous cherchez n\'existe pas ou a été déplacée.',
+'404_back_home' => 'Retour à l\'accueil',
 
 ];

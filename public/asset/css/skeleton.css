@@ -165,22 +165,22 @@
     color: white;
   }
 
-  body.presentation_page .burger .bar {
+  body.error_page .burger .bar {
     background-color: white;
   }
-      body.presentation_page .navbar  {
+      body.error_page .navbar  {
     background-color: #c6ac92;
         border-bottom: 1px solid white;
   }
-  body.presentation_page .nav-links  {
+  body.error_page .nav-links  {
     background-color: #c6ac92;
 
   }
-    body.presentation_page.scrolled .nav-links li a {
+    body.error_page.scrolled .nav-links li a {
     color: white;
   }
 
-  body.presentation_page .burger .bar {
+  body.error_page .burger .bar {
     background-color: white;
   }
 

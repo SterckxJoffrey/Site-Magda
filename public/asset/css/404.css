@@ -1,0 +1,68 @@
+body {
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+/* Wrapper général 404 */
+.error-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 2rem 1rem;
+  background-color: #f9f9f9;
+  color: var(--primary-color);
+  text-align: center;
+  gap: 1.5rem;
+  font-family: inherit;
+}
+
+.error-wrapper h1 {
+  font-size: 6rem;
+  font-weight: 900;
+  margin: 0;
+}
+
+.error-wrapper h2 {
+  font-size: 2.2rem;
+  margin: 0;
+}
+
+.error-wrapper p {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.error-wrapper a.button-home {
+  display: inline-block;
+  padding: 0.9rem 2rem;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 32px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.error-wrapper a.button-home:hover {
+  background-color: #b7997c;
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .error-wrapper h1 {
+    font-size: 8rem;
+  }
+
+  .error-wrapper h2 {
+    font-size: 2.8rem;
+  }
+
+  .error-wrapper p {
+    font-size: 1.4rem;
+  }
+}

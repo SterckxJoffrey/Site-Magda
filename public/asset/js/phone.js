@@ -1,6 +1,6 @@
 
-  const phone = "+322467890125";
-  const display = "+32 2 467 890 125";
+  const phone = "+32494995818";
+  const display = "+32 494 99 58 18";
   document.getElementById("phone-link").innerHTML =
     `<a href="tel:${phone}">${display}</a>`;
 

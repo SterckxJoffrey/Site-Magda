@@ -58,7 +58,7 @@ if (file_exists($controller_path)) {
     http_response_code(404);
     render('errors/404.php', [
         'head_title' => 'Page non trouvée',
-        'additional_css' => '<link rel="stylesheet" href="/css/404.css">'
+        'additional_css' => '<link rel="stylesheet" href="/asset/css/404.css">'
     ], $section, $lang);
     exit;
 }

@@ -8,7 +8,8 @@ function index()
 
     render('home/home.php', [
         'head_title' => $t['head_title_home'],
-        'additional_css' => '<link rel="stylesheet" href="/asset/css/home.css">',
+        'additional_css' => '<link rel="stylesheet" href="/asset/css/home.css"> <link rel="stylesheet" href="/asset/css/contact.css">',
+        
         'meta_description' => $t['meta_description_home'],
     ], 'public', $lang);
 }
