@@ -252,7 +252,7 @@
       width: auto;
     }
     .logo {
-
+      left: 60px;
     transform: translateY(-45%); /* centre verticalement */
 
 }
