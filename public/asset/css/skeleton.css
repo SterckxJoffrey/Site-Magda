@@ -251,3 +251,42 @@
   }
   
   
+.site-footer {
+  background-color: #8b6f55; /* Marron chaud foncé */
+  color: white;
+  padding: 2rem 1rem;
+  font-size: 0.95rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  text-align: center;
+}
+
+.footer-container p {
+  margin: 0;
+}
+
+.footer-container a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-container a:hover {
+  text-decoration: underline;
+}
+
+/* Version desktop */
+@media (min-width: 1024px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="%%META_DESCRIPTION%%" />
+    <meta name="robots" content="index, follow">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>%%HEAD_TITLE%%</title>
@@ -17,7 +18,7 @@
     <header>
       
         <nav class="navbar">
-          <a href="/" class="logo"><img src="/asset/img/logo.png" alt="logo Magda"></a>
+          <a href="/" class="logo"><img src="/asset/img/logo.svg" alt="logo Magda"></a>
           <button class="burger" aria-label="Menu" aria-expanded="false">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -32,10 +33,23 @@
     <main>
         %%MAIN_CONTENT%%
     </main>
+<footer class="site-footer">
+  <div class="footer-container">
+        <p>&copy; <?= date('Y') ?> Maître Magdalena Tyminska - Tous droits réservés</p>
+    <p>Avenue Louise 230/6, 1050 Bruxelles</p>
+    <p id="phonelink"></p>
+    <p id="emaillink"></p>
+
+  </div>
+</footer>
+
+
 
 
     <script src="/asset/js/navbar.js"></script>
        <script src="/asset/js/trad.js"></script>
+              <script src="/asset/js/contact.js"></script>
+
 
 </body>
 </html>
