@@ -5,9 +5,9 @@
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     background-color: transparent;
-    padding: var(--padding-s);
+    padding: var(--padding-l);
     position: fixed;
     width: 100%;
     z-index: 20;
@@ -15,18 +15,22 @@
     
   }
   
-  .logo img {
-    height: 60px;
-    object-fit: cover;
-  }
-  
-  .logo {
-    font-weight: 700;
-    font-size: 1.6rem;
-    text-decoration: none;
-    letter-spacing: 0.05em;
-    user-select: none;
-  }
+.logo {
+    position: absolute;   /* hors du flux */
+    top: 50%;             /* milieu de la navbar */
+    left: 20px;           /* espace depuis la gauche */
+    transform: translateY(-42%); /* centre verticalement */
+    height: 160px;        /* taille plus grande */
+    z-index: 1000;        /* au-dessus de la navbar */
+}
+
+.logo img {
+    height: 100%;         /* adapte l'image à la hauteur du conteneur */
+    object-fit: contain;  /* garde les proportions */
+}
+
+
+
   
 .lang-switcher a {
   font-size: 2rem !important;          /* taille du drapeau */
@@ -247,6 +251,11 @@
       flex-direction: row;
       width: auto;
     }
+    .logo {
+
+    transform: translateY(-45%); /* centre verticalement */
+
+}
 
   }
   

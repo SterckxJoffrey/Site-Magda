@@ -164,7 +164,7 @@ section ul li {
 
   section p,
   section ul li {
-    font-size: 1.2rem;
+    font-size: 1.2rem !important ;
   }
 
   .domain-grid {

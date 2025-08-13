@@ -93,11 +93,16 @@ function render($partial, $data = [], $view_dir = 'public', $lang = 'fr')
     // Afficher uniquement le drapeau de la langue non active
     $other_lang = $lang === 'fr' ? 'pl' : 'fr';
     $flags_html = '';
-    if ($other_lang === 'fr') {
-        $flags_html = '<a href="/fr/' . $current_uri . '" title="Français">🇫🇷</a>';
-    } else {
-        $flags_html = '<a href="/pl/' . $current_uri . '" title="Polski">🇵🇱</a>';
-    }
+if ($other_lang === 'fr') {
+    $flags_html = '<a href="/fr/' . $current_uri . '" title="Français">
+                        <img src="/asset/img/france.svg" alt="Français" width="30" height="20">
+                   </a>';
+} else {
+    $flags_html = '<a href="/pl/' . $current_uri . '" title="Polski">
+                        <img src="/asset/img/poland.svg" alt="Polski" width="30" height="30">
+                   </a>';
+}
+
 
     // Génération du menu avec traductions et un seul drapeau (langue non active)
     $menu = <<<HTML
