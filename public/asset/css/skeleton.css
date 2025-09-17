@@ -252,8 +252,9 @@
       width: auto;
     }
     .logo {
-      left: 60px;
-    transform: translateY(-45%); /* centre verticalement */
+      left: 80px;
+    transform: translateY(-43%); /* centre verticalement */
+    height: 250px;
 
 }
 

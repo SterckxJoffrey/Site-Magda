@@ -1,6 +1,6 @@
 <?php
 return [
-    'head_title_home' => 'Accueil - Maître Tyminska, Avocat à Bruxelles',
+    'head_title_home' => 'Maître Magdalena Tyminska, Avocat à Bruxelles',
     'head_title_domaines' => 'Domaines d’intervention - Maître Tyminska, Avocate à Bruxelles',
     'head_title_honoraires' => 'Honoraires de Maître Tyminska - Avocate à Bruxelles',
      'head_title_contact' => 'Contactez Maître Tyminska - Avocate à Bruxelles',

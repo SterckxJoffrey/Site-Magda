@@ -1,19 +1,36 @@
 <body class="home-page">
 <section class="hero-section">
-  <h1>Magdalena Tyminska</h1>
-  <h2>
-    <?=$t['hero_h2'] ?>
-  </h2>
-  <p> 
-   <?=$t['hero_p1'] ?>
-  </p>
-  <p>
-    <?=$t['hero_p2'] ?>
-  </p>
-  <a href="/contact" rel="noopener noreferrer">
-    <?=$t['hero_CTO'] ?>
-  </a>
+  <div class="hero-content">
+    <h1>Magdalena Tyminska</h1>
+    <h2>Barreau de Bruxelles</h2>
+
+    <div class="hero-icons">
+      <div class="icon">
+        <img src="/asset/img/house-big.svg" alt="Droit de la famille">
+        <p> Droit de la Famille</p>
+      </div>
+
+      <div class="icon">
+        <img src="/asset/img/buidling-big.svg" alt="Droit immobilier">
+        <p>Droit Immobilier</p>
+      </div>
+
+      <div class="icon">
+        <img src="/asset/img/car-big.svg" alt="Droit routier">
+        <p> Droit de la circulation routière</p>
+      </div>
+
+      <div class="icon">
+        <img src="/asset/img/child-big.svg" alt="Droit pénal">
+        <p>Droit de la Jeunesse</p>
+      </div>
+    </div>
+    <p>À votre écoute, avec rigueur et bienveillance, pour vous conseiller et faire valoir vos droits.</p>
+
+    <a href="/contact" rel="noopener noreferrer">Contact</a>
+  </div>
 </section>
+
 
 <section class="description">
 <h2>

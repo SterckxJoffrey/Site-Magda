@@ -1,239 +1,211 @@
+/* ---------------- Hero Section ---------------- */
 .hero-section {
-    background-image: url('/asset/img/back.avif');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 85vh;
-    
-    display: flex; /* Ajout Flexbox */
-    flex-direction: column;
-    justify-content: center; /* Centrage horizontal */
-    align-items: center;     /* Centrage vertical */
-    text-align: center;      /* Pour centrer le texte à l’intérieur */
-    gap: 10px;
-    z-index: -20;
-  }
-  
+  position: relative;
+  background-image: url('/asset/img/e.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+    background-position: left center; /* décale l'image vers la gauche */
+  height: 85vh;
 
-  .hero-section::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    height: 85vh;
-    background-color: rgba(0, 0, 0, 0.5); /* Opacité = foncé */
-    z-index: 0;
-  }
-  
-  .hero-section h1 {
-    /* position: relative; */
-    font-size: 2.3rem;
-    color: var(--secondary-color);
-    text-transform: uppercase;
-
-    font-weight: 700;
-    z-index: 10;
-  }
-  .hero-section h2 {
-    z-index: 10;
-    font-size: 2rem;
-    color: var(--secondary-color);
-    padding: var(--padding-s);
-  }
-  .hero-section p {
-    z-index: 10;
-    font-size: 1.2rem;
-    color: var(--secondary-color);
-    padding-right: var(--padding-m);
-    padding-left: var(--padding-m);
-    padding-bottom: var(--padding-s);
-  }
-  .hero-section a {
-    z-index: 10;
-    padding: 1.2rem 3rem;
-    margin-top: 1rem;
-    font-size: 1.3rem;
-    text-decoration: none;
-    font-weight: 600;
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    border-radius: 32px;
-  }
-  .description {
-    display: flex;
-    flex-direction: column;
-    padding: var(--padding-m);
-      gap: var(--padding-s);
-      background-color: #f9f9f9;
-  }
-
-  .description h2 {
-    font-size: 2rem;
-
-    text-align: center;
-    justify-content: center;
-        color: var(--primary-color);
-  }
-
-.description img {
-  margin: 1rem auto; /* centrage horizontal automatique */
-  border: 4px solid var(--primary-color);
-  border-radius: 16px;
-  width: 50%;
-  margin-bottom: var(--padding-m);
-  display: block; /* nécessaire pour que margin auto fonctionne */
+  display: flex;
+  justify-content: flex-end; /* le bandeau reste à droite */
+  align-items: center;
 }
-  .description p {
-    padding-bottom: 20px;
-    font-size: 1.1rem;
-    color: var(--text-color);
-    text-align: justify;
-  }
 
-.domain {
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* assombrit le fond */
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  width: 100%;       /* mobile-first : prend toute la largeur */
+  margin: 0;
+  padding: 3rem 2rem;
+
   display: flex;
   flex-direction: column;
-  background-color: var(--primary-color);
-  padding: var(--padding-m);
-  gap: var(--padding-s);
-}
-
-.domain h2 {
-  font-size: 2rem;
-  /* padding: var(--padding-s); */
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  color: var(--secondary-color);
+  z-index: 1;
 }
 
-.domain h3 {
-  text-align: center;
+.hero-content h1 {
+  font-size: 2rem; /* mobile-first */
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  line-height: 1.3em;
+  max-width: 100%;
+  word-wrap: break-word;
 }
 
-.domain ul {
-  list-style-type: none;
-  padding-left: 0;
-  margin: 0 0 var(--padding-m) 0;
+.hero-content h2 {
+  font-size: 1.2rem; /* mobile-first */
+  color: white;
+  margin-bottom: 1.5rem;
+  line-height: 1.3em;
+  max-width: 100%;
+  word-wrap: break-word;
 }
 
-.domain > ul > li {
-  font-weight: bold;
-  font-size: 1.2rem;
-  color: var(--secondary-color);
-  text-align: justify;
-  margin-top: var(--padding-m);
+/* ---------------- Icônes ---------------- */
+.hero-icons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* mobile-first : 2x2 */
+  gap: 1rem;
+  justify-items: center;
+  margin-bottom: 1rem;
 }
 
-.domain p {
-  padding: var(--padding-s) 0;
-  font-size: 1.1rem;
-  color: var(--text-color);
-  line-height: 1.5;
-  text-align: justify;
+.hero-icons .icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.9rem;
+  max-width: 100px;
 }
 
-
-
-.domain ul ul {
-  padding-left: 1.5rem;
-  list-style-type: disc;
-}
-
-.domain ul ul li {
-  font-weight: normal;
-  font-size: 1rem;
-  color: var(--text-color);
+.hero-icons .icon img {
+  width: 36px;
+  height: 36px;
   margin-bottom: 0.5rem;
-  text-align: justify;
+  filter: brightness(0) invert(1); /* icône blanche */
 }
 
-
-
-
-
-
-  @media screen and (min-width: 1024px) {
-    .hero-section {
-
-    height: 100vh;
-    gap : 25px
-    }
-    .hero-section a:hover {
-
-  background-color: #b7997c;
+.hero-icons .icon p {
+  text-align: center;
+  line-height: 1.2rem;
 }
 
-    
-      .hero-section::before {
+/* ---------------- Texte hero ---------------- */
+.hero-content p:last-of-type {
+  font-size: 1rem;   /* mobile-first */
+  font-style: italic;
+  color: white;
+  margin-bottom: 1rem;
+  max-width: 90%;
+  text-align: center;
+  line-height: 1.4rem;
+}
 
+/* ---------------- Bouton ---------------- */
+.hero-content a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  background-color: var(--secondary-color);
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.hero-content a:hover {
+  background-color: #fff;
+  color: var(--secondary-color);
+}
+.description { display: flex; flex-direction: column; padding: var(--padding-m); gap: var(--padding-s); background-color: #f9f9f9; } .description h2 { font-size: 2rem; text-align: center; justify-content: center; color: var(--primary-color); } .description img { margin: 1rem auto; /* centrage horizontal automatique */ border: 4px solid var(--primary-color); border-radius: 16px; width: 50%; margin-bottom: var(--padding-m); display: block; /* nécessaire pour que margin auto fonctionne */ } .description p { padding-bottom: 20px; font-size: 1.1rem; color: var(--text-color); text-align: justify; } .domain { display: flex; flex-direction: column; background-color: var(--primary-color); padding: var(--padding-m); gap: var(--padding-s); } .domain h2 { font-size: 2rem; /* padding: var(--padding-s); */ text-align: center; color: var(--secondary-color); } .domain h3 { text-align: center; } .domain ul { list-style-type: none; padding-left: 0; margin: 0 0 var(--padding-m) 0; } .domain > ul > li { font-weight: bold; font-size: 1.2rem; color: var(--secondary-color); text-align: justify; margin-top: var(--padding-m); } .domain p { padding: var(--padding-s) 0; font-size: 1.1rem; color: var(--text-color); line-height: 1.5; text-align: justify; } .domain ul ul { padding-left: 1.5rem; list-style-type: disc; } .domain ul ul li { font-weight: normal; font-size: 1rem; color: var(--text-color); margin-bottom: 0.5rem; text-align: justify; }
+/* ---------------- Media Queries ---------------- */
+
+/* Tablette */
+@media (min-width: 769px) and (max-width: 1023px) {
+  .hero-content {
+    width: 70%;
+    padding: 3rem 2.5rem;
+      background-color: rgba(198, 172, 146, 0.85); /* --primary-color avec opacité */
+  }
+  .hero-content{
+          background-color: rgba(198, 172, 146, 0.85); /* --primary-color avec opacité */
+          height: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1.3rem;
+  }
+
+  .hero-icons {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+
+  .hero-icons .icon img {
+    width: 38px;
+    height: 38px;
+  }
+
+  .hero-content p:last-of-type {
+    font-size: 1.05rem;
+  }
+
+  .hero-content a {
+    padding: 0.5rem 1.1rem;
+    font-size: 1rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .hero-section {
+    justify-content: flex-end;
     height: 100vh;
-      }
 
   }
 
+  .hero-content {
+    width: 45%;
+    height: 100%;
+    padding: 3rem 2.5rem;
+      background-color: rgba(198, 172, 146, 0.85); /* --primary-color avec opacité */
+  }
 
-@media screen and (min-width: 1024px) {
-  .description_content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  .hero-content h1 {
+    font-size: 2.6rem;
+    max-width: 300px;
+  }
+
+  .hero-content h2 {
+    font-size: 1.4rem;
+    max-width: 280px;
+  }
+
+  .hero-icons {
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
   }
 
-  .description {
-        padding: var(--padding-l);
+  .hero-icons .icon img {
+    width: 40px;
+    height: 40px;
   }
 
-  .description_content .image-container,
-  .description_content .text-container {
-    width: 50%;
-  }
-
-  .description_content img {
-    width: 60%;
-    max-width: 100%;
-    margin: auto;
-  }
-
-  .description h2 {
-    text-align: center;
-  }
-
-  .description p {
+  .hero-content p:last-of-type {
     font-size: 1.1rem;
-    padding-bottom: 24px;
-
-  }
-  .text-container {
-    padding: var(--padding-m);
-        padding-right: 60px;
+    max-width: 320px;
   }
 
-  .domain-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-
+  .hero-content a {
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
   }
-  .domain > ul > li {
-    padding-right: 3rem;
-        padding-left: 3rem;
 }
 
-  .domain li {
-
-
-    border-radius: 12px;
-
+/* Desktop large */
+@media screen and (min-width: 1440px) {
+  .hero-content {
+    padding: 4rem 3rem;
   }
-  
-  .domain h3 {
-    text-align: center;
-    padding-bottom: var(--padding-s);
-  }
-
-  .domain h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-    padding: var(--padding-s);
-  }
+  @media screen and (min-width: 1024px) { .description_content { display: flex; flex-direction: row; align-items: center; gap: 2rem; } .description { padding: var(--padding-l); } .description_content .image-container, .description_content .text-container { width: 50%; } .description_content img { width: 60%; max-width: 100%; margin: auto; } .description h2 { text-align: center; } .description p { font-size: 1.1rem; padding-bottom: 24px; } .text-container { padding: var(--padding-m); padding-right: 60px; } .domain-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; } .domain > ul > li { padding-right: 3rem; padding-left: 3rem; } .domain li { border-radius: 12px; } .domain h3 { text-align: center; padding-bottom: var(--padding-s); } .domain h2 { text-align: center; margin-bottom: 2rem; padding: var(--padding-s); } }
 }
