@@ -119,13 +119,17 @@
 /* Tablette */
 @media (min-width: 769px) and (max-width: 1023px) {
   .hero-content {
-    width: 70%;
+    width: 100%;
     padding: 3rem 2.5rem;
-      background-color: rgba(198, 172, 146, 0.85); /* --primary-color avec opacité */
-  }
-  .hero-content{
-          background-color: rgba(198, 172, 146, 0.85); /* --primary-color avec opacité */
-          height: 100%;
+    height: 100%;
+
+    /* Centrage */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centre verticalement */
+    align-items: center;     /* centre horizontalement */
+    text-align: center;      /* centre le texte */
+    gap: 25px;
   }
 
   .hero-content h1 {
@@ -148,6 +152,7 @@
 
   .hero-content p:last-of-type {
     font-size: 1.05rem;
+    text-align: center; /* force aussi pour la phrase */
   }
 
   .hero-content a {
@@ -155,6 +160,7 @@
     font-size: 1rem;
   }
 }
+
 
 /* Desktop */
 @media (min-width: 1024px) {

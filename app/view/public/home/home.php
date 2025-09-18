@@ -2,7 +2,7 @@
 <section class="hero-section">
   <div class="hero-content">
     <h1>Magdalena Tyminska</h1>
-    <h2>Barreau de Bruxelles</h2>
+    <h2>Avocat au barreau de Bruxelles</h2>
 
     <div class="hero-icons">
       <div class="icon">

@@ -239,10 +239,17 @@
       z-index: 10;
     }
   
-    .nav-links li a {
-      font-size: 1rem;
-      width: auto;
-    }
+.nav-links li a {
+  font-size: 1rem;
+  width: auto;
+  border: 1px solid white;
+}
+
+/* Supprime le cadre uniquement pour le switcher */
+.nav-links li.lang-switcher a {
+  border: none !important;
+}
+
         .nav-links li a:hover {
           border: 1px solid white;
     }
@@ -300,3 +307,14 @@
   }
 }
 
+
+@media (min-width: 769px) and (max-width: 1023px) {
+  .logo {
+    
+      left: 50px;
+    transform: translateY(-43%); /* centre verticalement */
+    height: 250px;
+
+
+}
+}
