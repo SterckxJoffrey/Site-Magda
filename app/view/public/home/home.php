@@ -6,31 +6,40 @@
         <?=$t['hero_h2'] ?>
     </h2>
 
-    <div class="hero-icons">
-      <div class="icon">
-        <img src="/asset/img/house-big.svg" alt="Droit de la famille">
-        <p><?=$t['domain_famille']?></p>
-      </div>
-
-      <div class="icon">
-        <img src="/asset/img/buidling-big.svg" alt="Droit immobilier">
-        <p><?=$t['domain_immobilier']?></p>
-      </div>
-
-      <div class="icon">
-        <img src="/asset/img/car-big.svg" alt="Droit routier">
-        <p><?=$t['domain_routier']?></p>
-      </div>
-
-      <div class="icon">
-        <img src="/asset/img/child-big.svg" alt="Droit jeunesse">
-        <p><?=$t['domain_jeunesse']?></p>
-      </div>
+<div class="hero-icons">
+  <a href="/<?=$lang?>/domain/#famille" class="icon-link">
+    <div class="icon">
+      <img src="/asset/img/house-big.svg" alt="<?=$t['domain_famille']?>">
+      <p><?=$t['domain_famille']?></p>
     </div>
+  </a>
+
+  <a href="/<?=$lang?>/domain/#immobilier" class="icon-link">
+    <div class="icon">
+      <img src="/asset/img/buidling-big.svg" alt="<?=$t['domain_immobilier']?>">
+      <p><?=$t['domain_immobilier']?></p>
+    </div>
+  </a>
+
+  <a href="/<?=$lang?>/domain/#routier" class="icon-link">
+    <div class="icon">
+      <img src="/asset/img/car-big.svg" alt="<?=$t['domain_routier']?>">
+      <p><?=$t['domain_routier']?></p>
+    </div>
+  </a>
+
+  <a href="/<?=$lang?>/domain/#jeunesse" class="icon-link">
+    <div class="icon">
+      <img src="/asset/img/child-big.svg" alt="<?=$t['domain_jeunesse']?>">
+      <p><?=$t['domain_jeunesse']?></p>
+    </div>
+  </a>
+</div>
+
 
     <p><?=$t['hero_paragraph']?></p>
 
-    <a href="/contact" rel="noopener noreferrer"><?=$t['nav_contact']?></a>
+    <a href="/contact" rel="noopener noreferrer" class="cto"><?=$t['nav_contact']?></a>
   </div>
 </section>
 

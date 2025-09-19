@@ -26,7 +26,7 @@
     </div>
   </section>
 
-  <section class="domain_left">
+  <section class="domain_left" id="jeunesse">
     <div class="hero_left">
       <img src="/asset/img/droit_jeunesse.jpg" loading="lazy" alt="<?=$t['alt_droit_jeunesse'] ?>">
       <div class="left">
@@ -47,7 +47,7 @@
     </div>
   </section>
 
-  <section class="domain">
+  <section class="domain" id="immobilier">
     <div class="hero">
       <img src="/asset/img/droit_immobiliser.jpg" loading="lazy" alt="<?=$t['alt_droit_immobilier'] ?>">
       <div class="right">
@@ -68,7 +68,7 @@
     </div>
   </section>
 
-  <section class="domain_left">
+  <section class="domain_left" id ="routier">
     <div class="hero_left">
       <img src="/asset/img/droit_route.jpg" loading="lazy" alt="<?=$t['alt_droit_routier'] ?>">
       <div class="left">
