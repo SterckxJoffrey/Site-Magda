@@ -79,7 +79,7 @@
   filter: brightness(0) invert(1); /* icône blanche */
 }
 
-.hero-icons .icon p {
+.hero-icons .icon a {
   text-align: center;
   line-height: 1.2rem;
 }
@@ -95,24 +95,38 @@
   line-height: 1.4rem;
 }
 
+    .hero-icons .icon p {
+    font-size: 0.9rem !important;
+    font-style: normal !important;
+  }
+
 /* ---------------- Bouton ---------------- */
 .hero-content a {
   display: inline-block;
-  padding: 0.5rem 1rem;
-  font-size: 0.95rem;
-  font-weight: 600;
-  background-color: var(--secondary-color);
-  color: white;
-  border-radius: 20px;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  background-color: #fff; /* contraste fort avec ton overlay beige */
+  border: 2px solid #fff;
+  border-radius: 30px;
   text-decoration: none;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  border: var(--primary-color) 1px solid;
 }
 
 .hero-content a:hover {
-  background-color: #fff;
-  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.4);
 }
+
+
+
+
 .description { display: flex; flex-direction: column; padding: var(--padding-m); gap: var(--padding-s); background-color: #f9f9f9; } .description h2 { font-size: 2rem; text-align: center; justify-content: center; color: var(--primary-color); } .description img { margin: 1rem auto; /* centrage horizontal automatique */ border: 4px solid var(--primary-color); border-radius: 16px; width: 50%; margin-bottom: var(--padding-m); display: block; /* nécessaire pour que margin auto fonctionne */ } .description p { padding-bottom: 20px; font-size: 1.1rem; color: var(--text-color); text-align: justify; } .domain { display: flex; flex-direction: column; background-color: var(--primary-color); padding: var(--padding-m); gap: var(--padding-s); } .domain h2 { font-size: 2rem; /* padding: var(--padding-s); */ text-align: center; color: var(--secondary-color); } .domain h3 { text-align: center; } .domain ul { list-style-type: none; padding-left: 0; margin: 0 0 var(--padding-m) 0; } .domain > ul > li { font-weight: bold; font-size: 1.2rem; color: var(--secondary-color); text-align: justify; margin-top: var(--padding-m); } .domain p { padding: var(--padding-s) 0; font-size: 1.1rem; color: var(--text-color); line-height: 1.5; text-align: justify; } .domain ul ul { padding-left: 1.5rem; list-style-type: disc; } .domain ul ul li { font-weight: normal; font-size: 1rem; color: var(--text-color); margin-bottom: 0.5rem; text-align: justify; }
 /* ---------------- Media Queries ---------------- */
 
@@ -137,7 +151,7 @@
   }
 
   .hero-content h2 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   .hero-icons {
@@ -149,9 +163,17 @@
     width: 38px;
     height: 38px;
   }
+    .hero-content p {
+    font-size: 0.5rem;
+
+  }
+      .hero-icons .icon p {
+    font-size: 1rem !important;
+    font-style: normal !important;
+  }
 
   .hero-content p:last-of-type {
-    font-size: 1.05rem;
+    font-size: 1.3rem;
     text-align: center; /* force aussi pour la phrase */
   }
 
@@ -180,11 +202,12 @@
   .hero-content h1 {
     font-size: 2.6rem;
     max-width: 300px;
+    padding-bottom: 1rem;
   }
 
   .hero-content h2 {
     font-size: 1.4rem;
-    max-width: 280px;
+    /* max-width: 280px; */
   }
 
   .hero-icons {
@@ -196,15 +219,20 @@
     width: 40px;
     height: 40px;
   }
+    .hero-icons .icon p {
+    font-size: 1rem !important;
+    font-style: normal !important;
+  }
 
   .hero-content p:last-of-type {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     max-width: 320px;
   }
 
   .hero-content a {
+    margin-top: 1rem;
     padding: 0.5rem 1.2rem;
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -213,5 +241,98 @@
   .hero-content {
     padding: 4rem 3rem;
   }
-  @media screen and (min-width: 1024px) { .description_content { display: flex; flex-direction: row; align-items: center; gap: 2rem; } .description { padding: var(--padding-l); } .description_content .image-container, .description_content .text-container { width: 50%; } .description_content img { width: 60%; max-width: 100%; margin: auto; } .description h2 { text-align: center; } .description p { font-size: 1.1rem; padding-bottom: 24px; } .text-container { padding: var(--padding-m); padding-right: 60px; } .domain-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; } .domain > ul > li { padding-right: 3rem; padding-left: 3rem; } .domain li { border-radius: 12px; } .domain h3 { text-align: center; padding-bottom: var(--padding-s); } .domain h2 { text-align: center; margin-bottom: 2rem; padding: var(--padding-s); } }
 }
+/* ----- TABLETTE ----- */
+@media screen and (min-width: 800px) {
+  .description_content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .description {
+    padding: var(--padding-l);
+  }
+
+  .description_content .image-container,
+  .description_content .text-container {
+    width: 50%;
+  }
+
+  .description_content img {
+    width: 60%;
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .description h2 {
+    text-align: center;
+  }
+
+  .description p {
+    font-size: 1.1rem;
+    padding-bottom: 24px;
+  }
+
+  .text-container {
+    padding: var(--padding-m);
+    padding-right: 40px; /* un peu moins que desktop */
+  }
+
+  .domain-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .domain > ul > li {
+    padding: 0 2rem;
+  }
+
+  .domain li {
+    border-radius: 12px;
+  }
+
+  .domain h3 {
+    text-align: center;
+    padding-bottom: var(--padding-s);
+  }
+
+  .domain h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: var(--padding-s);
+  }
+}
+
+/* ----- DESKTOP ----- */
+@media screen and (min-width: 1024px) {
+  .description_content {
+    gap: 3rem; /* plus d'air entre image et texte */
+  }
+
+  .description_content img {
+    width: 60%; /* image plus petite */
+  }
+
+  .text-container {
+    padding: var(--padding-l);
+    padding-right: 60px;
+  }
+
+  .description p {
+    font-size: 1.1rem; /* texte un peu plus grand */
+    line-height: 1.4;
+  }
+
+  .domain-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem; /* plus d'espace */
+  }
+
+  .domain > ul > li {
+    padding: 0 3rem;
+  }
+}
+
