@@ -24,6 +24,16 @@ return [
     // 'contact' => 'Contactez-nous',
 
     'hero_h2' => 'Avocat au barreau de Bruxelles',
+    // Hero
+
+'hero_paragraph' => "À votre écoute, avec rigueur et bienveillance, pour vous conseiller et faire valoir vos droits.",
+
+// Domaines
+'domain_famille' => "Droit de la Famille",
+'domain_immobilier' => "Droit Immobilier",
+'domain_routier' => "Droit de la circulation routière",
+'domain_jeunesse' => "Droit de la Jeunesse",
+
 
     'hero_p1' => 'Droit de la famille, droit de la jeunesse, droit immobilier et droit de la circulation routière',
     'hero_p2' => 'À votre écoute, avec rigueur et bienveillance, pour vous conseiller et faire valoir vos droits.',

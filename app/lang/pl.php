@@ -20,6 +20,14 @@ return [
 
     'hero_h2' => 'Adwokat przy Izbie Adwokackiej w Brukseli',
 
+    'hero_paragraph' => 'Do Państwa dyspozycji, z rzetelnością i życzliwością, aby doradzać i egzekwować Państwa prawa.',
+
+    // Domaines
+    'domain_famille' => 'Prawo Rodzinne',
+    'domain_immobilier' => 'Prawo Nieruchomości',
+    'domain_routier' => 'Prawo Ruchu Drogowego',
+    'domain_jeunesse' => 'Prawo Młodzieżowe',
+
     'hero_p1' => 'Prawo rodzinne, prawo nieletnich, prawo nieruchomości oraz prawo drogowe',
     'hero_p2' => 'Z zaangażowaniem, rzetelnością i empatią – aby doradzać i skutecznie dochodzić Twoich praw.',
 

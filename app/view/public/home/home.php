@@ -2,34 +2,38 @@
 <section class="hero-section">
   <div class="hero-content">
     <h1>Magdalena Tyminska</h1>
-    <h2>Avocat au barreau de Bruxelles</h2>
+    <h2>
+        <?=$t['hero_h2'] ?>
+    </h2>
 
     <div class="hero-icons">
       <div class="icon">
         <img src="/asset/img/house-big.svg" alt="Droit de la famille">
-        <p> Droit de la Famille</p>
+        <p><?=$t['domain_famille']?></p>
       </div>
 
       <div class="icon">
         <img src="/asset/img/buidling-big.svg" alt="Droit immobilier">
-        <p>Droit Immobilier</p>
+        <p><?=$t['domain_immobilier']?></p>
       </div>
 
       <div class="icon">
         <img src="/asset/img/car-big.svg" alt="Droit routier">
-        <p> Droit de la circulation routière</p>
+        <p><?=$t['domain_routier']?></p>
       </div>
 
       <div class="icon">
-        <img src="/asset/img/child-big.svg" alt="Droit pénal">
-        <p>Droit de la Jeunesse</p>
+        <img src="/asset/img/child-big.svg" alt="Droit jeunesse">
+        <p><?=$t['domain_jeunesse']?></p>
       </div>
     </div>
-    <p>À votre écoute, avec rigueur et bienveillance, pour vous conseiller et faire valoir vos droits.</p>
 
-    <a href="/contact" rel="noopener noreferrer">Contact</a>
+    <p><?=$t['hero_paragraph']?></p>
+
+    <a href="/contact" rel="noopener noreferrer"><?=$t['nav_contact']?></a>
   </div>
 </section>
+
 
 
 <section class="description">
