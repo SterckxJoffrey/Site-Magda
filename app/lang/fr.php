@@ -23,7 +23,7 @@ return [
     // 'intro_text' => 'Découvrez notre univers en ligne',
     // 'contact' => 'Contactez-nous',
 
-    'hero_h2' => 'Avocat au barreau de Bruxelles',
+    'hero_h2' => 'Avocate au barreau de Bruxelles',
     // Hero
 
 'hero_paragraph' => "À votre écoute, avec rigueur et bienveillance, pour vous conseiller et faire valoir vos droits.",

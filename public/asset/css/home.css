@@ -84,6 +84,16 @@
   line-height: 1.2rem;
 }
 
+.hero-icons .icon  {
+  display: inline-block; /* nécessaire pour que transform fonctionne bien */
+  transition: transform 0.3s ease;
+}
+
+.hero-icons .icon:hover {
+  transform: scale(1.2);
+}
+
+
 /* ---------------- Texte hero ---------------- */
 .hero-content p:last-of-type {
   font-size: 1rem;   /* mobile-first */
