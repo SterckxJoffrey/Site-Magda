@@ -1,6 +1,7 @@
 <?php
 return [
-    'head_title_home' => 'Maître Magdalena Tyminska, Avocat à Bruxelles',
+'head_title_home' => 'Avocate polonaise à Bruxelles – Droit de la famille et de la jeunesse | Maître Magdalena Tyminska',
+
     'head_title_domaines' => 'Domaines d’intervention - Maître Tyminska, Avocate à Bruxelles',
     'head_title_honoraires' => 'Honoraires de Maître Tyminska - Avocate à Bruxelles',
      'head_title_contact' => 'Contactez Maître Tyminska - Avocate à Bruxelles',
@@ -45,8 +46,8 @@ return [
     'description_p1' => 'Avocate inscrite au barreau de Bruxelles, Me Tyminska s’est spécialisée en droit de la famille, droit de la jeunesse, droit immobilier et droit de la circulation routière. Elle accompagne ses clients avec rigueur et humanité dans des situations variées : conflits familiaux, procédures devant le tribunal de la jeunesse, litiges locatifs ou encore infractions au code de la route.',
     'description_p2' => 'Diplômée de l’Université Saint-Louis et titulaire d’un Master en droit de l’Université Libre de Bruxelles, elle allie une formation académique exigeante à une pratique quotidienne du droit, toujours centrée sur les besoins concrets de ses clients.',
     'description_p3' => 'Dotée d’un grand sens de l’organisation et d’une attention méticuleuse aux détails, elle traite chaque dossier avec sérieux et efficacité. Son approche est pragmatique, personnalisée et orientée vers la recherche de solutions durables. Elle représente ses clients avec détermination devant les juridictions, en veillant à défendre leurs intérêts avec force et intégrité.',
-    'description_p4' => 'Bilingue en français et en polonais, Me Tyminska est en mesure d’assister sa clientèle dans les deux langues, garantissant ainsi une communication claire et fluide.',
-
+    
+'description_p4' => 'Bilingue en français et en <strong>polonais</strong>, Me Tyminska est en mesure d’assister sa clientèle dans les deux langues, garantissant ainsi une communication claire et fluide.',
    'domain_h2' => 'Domaines d\'activité',
 
     'domain_h3_1' => 'Droit de la famille',
@@ -205,7 +206,7 @@ return [
 'contact_phone_label' => 'Téléphone :',
 'contact_email_label' => 'Email :',
 'contact_info_label' => 'Infos pratiques :',
-'contact_info_text' => 'Accessible via métro Louise (lignes 2 & 6) ou tram 8, 93, 94. Parkings publics à proximité.',
+'contact_info_text' => 'Accessible via métro Louise (lignes 2 & 6) ou tram 8, 93. Parkings publics à proximité.',
 
 '404_title' => 'Oups... Page introuvable',
 '404_message' => 'La page que vous cherchez n\'existe pas ou a été déplacée.',

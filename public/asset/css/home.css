@@ -55,11 +55,15 @@
   word-wrap: break-word;
 }
 
+strong {
+  font-weight: normal;
+}
+
 /* ---------------- Icônes ---------------- */
 .hero-icons {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* mobile-first : 2x2 */
-  gap: 1rem;
+  gap: 0.5rem;
   justify-items: center;
   margin-bottom: 1rem;
 }

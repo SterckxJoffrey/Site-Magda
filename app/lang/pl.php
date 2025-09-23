@@ -195,7 +195,7 @@ return [
 'contact_phone_label' => 'Telefon:',
 'contact_email_label' => 'Email:',
 'contact_info_label' => 'Informacje praktyczne:',
-'contact_info_text' => 'Dostępne przez metro Louise (linie 2 i 6) lub tramwaj 8, 93, 94. Parking publiczny w pobliżu.',
+'contact_info_text' => 'Dostępne przez metro Louise (linie 2 i 6) lub tramwaj 8, 93. Parking publiczny w pobliżu.',
 
 '404_title' => 'Ups... Strona nie znaleziona',
 '404_message' => 'Strona, której szukasz, nie istnieje lub została przeniesiona.',
