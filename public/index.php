@@ -124,5 +124,20 @@ HTML;
     $page = str_replace('%%MENU%%', $menu, $page);
     $page = str_replace('%%LANG%%', $lang, $page);
 
+// Canonical
+$canonical = '<link rel="canonical" href="https://tyminska-avocat.be/' . $lang . '/' . $current_uri . '">' . "\n";
+
+// Hreflang
+$hreflangs = '';
+foreach (['fr', 'pl'] as $l) {
+    $hreflangs .= '<link rel="alternate" hreflang="' . $l . '" href="https://tyminska-avocat.be/' . $l . '/' . $current_uri . '">' . "\n";
+}
+
+// Ajout du x-default vers la version française
+$hreflangs .= '<link rel="alternate" hreflang="x-default" href="https://tyminska-avocat.be/fr/' . $current_uri . '">' . "\n";
+
+$page = str_replace('%%CANONICAL%%', $canonical . $hreflangs, $page);
+
+
     echo $page;
 }
