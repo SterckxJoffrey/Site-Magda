@@ -51,7 +51,7 @@
 </h2>
 <div class="description_content">
   <div class="image-container">
-<img src="/asset/img/photo.jpeg" alt="image de moi">
+<img src="/asset/img/photo.jpeg" alt="photo de Maître Magdalena Tyminska">
   </div>
     <div class="text-container">
 <p>
