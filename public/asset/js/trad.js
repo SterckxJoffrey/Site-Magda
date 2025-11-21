@@ -8,12 +8,12 @@
   const pathParts = window.location.pathname.split('/').filter(Boolean);
   const currentLang = pathParts.length > 0 && ['fr', 'pl'].includes(pathParts[0]) ? pathParts[0] : null;
 
-  if (preferredLang && preferredLang !== currentLang) {
-    // Reconstruire le chemin sans la langue
-    const pathWithoutLang = currentLang ? pathParts.slice(1).join('/') : pathParts.join('/');
-    // Redirection vers la bonne langue avec le chemin
-    window.location.replace(`/${preferredLang}/${pathWithoutLang}`);
-  }
+  // if (preferredLang && preferredLang !== currentLang) {
+  //   // Reconstruire le chemin sans la langue
+  //   const pathWithoutLang = currentLang ? pathParts.slice(1).join('/') : pathParts.join('/');
+  //   // Redirection vers la bonne langue avec le chemin
+  //   window.location.replace(`/${preferredLang}/${pathWithoutLang}`);
+  // }
 
   // Ajouter des événements sur les drapeaux pour enregistrer la langue choisie
   document.addEventListener('DOMContentLoaded', () => {

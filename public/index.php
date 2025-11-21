@@ -80,7 +80,7 @@ function render($partial, $data = [], $view_dir = 'public', $lang = 'fr')
     // Lecture du squelette
     $page = file_get_contents($skeleton);
 
-    // Reconstruire l'URL actuelle sans la langue
+    // Reconstruction de l’URL sans la langue
     $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
     $uri_parts_local = explode('/', trim($uri, '/'));
 
@@ -93,27 +93,58 @@ function render($partial, $data = [], $view_dir = 'public', $lang = 'fr')
     // Afficher uniquement le drapeau de la langue non active
     $other_lang = $lang === 'fr' ? 'pl' : 'fr';
     $flags_html = '';
-if ($other_lang === 'fr') {
-    $flags_html = '<a href="/fr/' . $current_uri . '" title="Français">
-                        <img src="/asset/img/france.svg" alt="Français" width="30" height="20">
-                   </a>';
-} else {
-    $flags_html = '<a href="/pl/' . $current_uri . '" title="Polski">
-                        <img src="/asset/img/poland.svg" alt="Polski" width="30" height="30">
-                   </a>';
-}
 
+    if ($other_lang === 'fr') {
+        $flags_html = '<a href="/fr/' . $current_uri . '" title="Français">
+                            <img src="/asset/img/france.svg" alt="Français" width="30" height="20">
+                       </a>';
+    } else {
+        $flags_html = '<a href="/pl/' . $current_uri . '" title="Polski">
+                            <img src="/asset/img/poland.svg" alt="Polski" width="30" height="30">
+                       </a>';
+    }
 
     // Génération du menu avec traductions et un seul drapeau (langue non active)
     $menu = <<<HTML
-  <li><a href="/{$lang}/home">{$t['nav_home']}</a></li>
-  <li><a href="/{$lang}/domain">{$t['nav_domain']}</a></li>
-  <li><a href="/{$lang}/honoraire">{$t['nav_fees']}</a></li>
-  <li><a href="/{$lang}/contact" class="CTO">{$t['nav_contact']}</a></li>
-  <li class="lang-switcher">
-    {$flags_html}
-  </li>
+      <li><a href="/{$lang}/home">{$t['nav_home']}</a></li>
+      <li><a href="/{$lang}/domain">{$t['nav_domain']}</a></li>
+      <li><a href="/{$lang}/honoraire">{$t['nav_fees']}</a></li>
+      <li><a href="/{$lang}/contact" class="CTO">{$t['nav_contact']}</a></li>
+      <li class="lang-switcher">
+        {$flags_html}
+      </li>
 HTML;
+
+    // --- CANONICAL + HREFLANG propres et cohérents ---
+
+    // Canonical propre (pas de double slash, pas de slash final)
+    $canonical_url = 'https://tyminska-avocat.be/' . $lang;
+    if (!empty($current_uri)) {
+        $canonical_url .= '/' . trim($current_uri, '/');
+    }
+    $canonical_url = rtrim($canonical_url, '/');
+
+    $canonical = '<link rel="canonical" href="' . $canonical_url . '">' . "\n";
+
+    // Hreflangs cohérents
+    $hreflangs = '';
+    foreach (['fr', 'pl'] as $l) {
+        $alt_url = 'https://tyminska-avocat.be/' . $l;
+        if (!empty($current_uri)) {
+            $alt_url .= '/' . trim($current_uri, '/');
+        }
+        $alt_url = rtrim($alt_url, '/');
+        $hreflangs .= '<link rel="alternate" hreflang="' . $l . '" href="' . $alt_url . '">' . "\n";
+    }
+
+    // x-default (toujours vers la version FR)
+    $xdefault_url = 'https://tyminska-avocat.be/fr';
+    if (!empty($current_uri)) {
+        $xdefault_url .= '/' . trim($current_uri, '/');
+    }
+    $xdefault_url = rtrim($xdefault_url, '/');
+
+    $hreflangs .= '<link rel="alternate" hreflang="x-default" href="' . $xdefault_url . '">' . "\n";
 
     // Injections dans le squelette
     $page = str_replace('%%HEAD_TITLE%%', $data['head_title'] ?? 'Mon site', $page);
@@ -123,21 +154,7 @@ HTML;
     $page = str_replace('%%MAIN_CONTENT%%', $partialContent, $page);
     $page = str_replace('%%MENU%%', $menu, $page);
     $page = str_replace('%%LANG%%', $lang, $page);
-
-// Canonical
-$canonical = '<link rel="canonical" href="https://tyminska-avocat.be/' . $lang . '/' . $current_uri . '">' . "\n";
-
-// Hreflang
-$hreflangs = '';
-foreach (['fr', 'pl'] as $l) {
-    $hreflangs .= '<link rel="alternate" hreflang="' . $l . '" href="https://tyminska-avocat.be/' . $l . '/' . $current_uri . '">' . "\n";
-}
-
-// Ajout du x-default vers la version française
-$hreflangs .= '<link rel="alternate" hreflang="x-default" href="https://tyminska-avocat.be/fr/' . $current_uri . '">' . "\n";
-
-$page = str_replace('%%CANONICAL%%', $canonical . $hreflangs, $page);
-
+    $page = str_replace('%%CANONICAL%%', $canonical . $hreflangs, $page);
 
     echo $page;
 }
